@@ -17,8 +17,8 @@ BulkPDF is a free and easy to use open source software, which allows to automati
 * Compatible with Acroform and XFA
 
 ## Screenshots
-![alt tag](http://bulkpdf.de/img/index1_de.png)
+![alt tag](http://bulkpdf.de/img/index1_en.png)
 
-![alt tag](http://bulkpdf.de/img/index2_de.png)
+![alt tag](http://bulkpdf.de/img/index2_en.png)
 
-![alt tag](http://bulkpdf.de/img/index3_de.png)
+![alt tag](http://bulkpdf.de/img/index3_en.png)
