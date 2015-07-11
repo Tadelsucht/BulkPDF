@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="bNext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
+    <value>Bottom, Right</value>
   </data>
   <data name="bNext.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -151,7 +151,7 @@
     <value>5</value>
   </data>
   <data name="bBack.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
+    <value>Bottom, Right</value>
   </data>
   <data name="bBack.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -181,7 +181,7 @@
     <value>4</value>
   </data>
   <data name="bFinish.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
+    <value>Bottom, Right</value>
   </data>
   <data name="bFinish.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -518,7 +518,7 @@
     <value>2</value>
   </data>
   <data name="bDonate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
+    <value>Bottom, Left</value>
   </data>
   <data name="bDonate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -579,6 +579,9 @@
   </data>
   <data name="&gt;&gt;seperatorLine1.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="wizardPages.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="llSupport.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -679,6 +682,9 @@
   <data name="&gt;&gt;llLicenses.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="rtbWelcome.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <data name="rtbWelcome.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 43</value>
   </data>
@@ -766,7 +772,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>5</value>
   </data>
   <data name="bLoadConfiguration.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
+    <value>Bottom, Left, Right</value>
   </data>
   <data name="bLoadConfiguration.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -794,6 +800,9 @@ We recommend to look at the include sample files and to visit the documentation 
   </data>
   <data name="&gt;&gt;bLoadConfiguration.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="llDokumentation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
   </data>
   <data name="llDokumentation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -882,6 +891,9 @@ We recommend to look at the include sample files and to visit the documentation 
   <data name="gbSpreadsheet.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
+  <data name="cbSpreadsheetTable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
   <data name="cbSpreadsheetTable.Location" type="System.Drawing.Point, System.Drawing">
     <value>91, 88</value>
   </data>
@@ -933,6 +945,9 @@ We recommend to look at the include sample files and to visit the documentation 
   <data name="&gt;&gt;lTable.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="bSelectSpreadsheet.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
   <data name="bSelectSpreadsheet.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -959,6 +974,9 @@ We recommend to look at the include sample files and to visit the documentation 
   </data>
   <data name="&gt;&gt;bSelectSpreadsheet.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="tbSpreadsheet.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
   </data>
   <data name="tbSpreadsheet.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 48</value>
@@ -1097,6 +1115,9 @@ We recommend to look at the include sample files and to visit the documentation 
   </data>
   <data name="&gt;&gt;lColumns.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="cbDataSourceColumnsExampleSpreadsheet.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
   </data>
   <data name="cbDataSourceColumnsExampleSpreadsheet.Location" type="System.Drawing.Point, System.Drawing">
     <value>104, 70</value>
@@ -1240,7 +1261,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="tbFormTyp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 6</value>
+    <value>261, 8</value>
   </data>
   <data name="tbFormTyp.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 20</value>
@@ -1324,7 +1345,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>Top, Left, Right</value>
   </data>
   <data name="tbPDF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>99, 6</value>
+    <value>99, 8</value>
   </data>
   <data name="tbPDF.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 20</value>
@@ -1399,7 +1420,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>2</value>
   </data>
   <data name="bShortcutCreator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
+    <value>Bottom, Left</value>
   </data>
   <data name="bShortcutCreator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1427,6 +1448,9 @@ We recommend to look at the include sample files and to visit the documentation 
   </data>
   <data name="&gt;&gt;bShortcutCreator.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="gbOptions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="cbFinalize.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1484,6 +1508,9 @@ We recommend to look at the include sample files and to visit the documentation 
   </data>
   <data name="gbOuput.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <data name="tbOutputDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
   </data>
   <data name="tbOutputDir.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 19</value>
@@ -1717,7 +1744,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>3</value>
   </data>
   <data name="cbUseValueFromDataSource.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
+    <value>Left</value>
   </data>
   <data name="cbUseValueFromDataSource.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1780,7 +1807,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>5</value>
   </data>
   <data name="lPlus1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
+    <value>Left</value>
   </data>
   <data name="lPlus1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1837,7 +1864,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>7</value>
   </data>
   <data name="cbDataSourceColumnsFilename.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
+    <value>Left, Right</value>
   </data>
   <data name="cbDataSourceColumnsFilename.Location" type="System.Drawing.Point, System.Drawing">
     <value>152, 18</value>
@@ -1861,7 +1888,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>8</value>
   </data>
   <data name="tbPrefix.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
+    <value>Left</value>
   </data>
   <data name="tbPrefix.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 19</value>

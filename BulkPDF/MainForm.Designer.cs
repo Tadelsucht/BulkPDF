@@ -144,11 +144,11 @@
             // 
             // wizardPages
             // 
+            resources.ApplyResources(this.wizardPages, "wizardPages");
             this.wizardPages.Controls.Add(this.tpWelcome);
             this.wizardPages.Controls.Add(this.tbDataSourceSelect);
             this.wizardPages.Controls.Add(this.tpPDFSelect);
             this.wizardPages.Controls.Add(this.tpFinish);
-            resources.ApplyResources(this.wizardPages, "wizardPages");
             this.wizardPages.Name = "wizardPages";
             this.wizardPages.SelectedIndex = 0;
             this.wizardPages.TabStop = false;
@@ -192,9 +192,9 @@
             // 
             // rtbWelcome
             // 
+            resources.ApplyResources(this.rtbWelcome, "rtbWelcome");
             this.rtbWelcome.BackColor = System.Drawing.SystemColors.Control;
             this.rtbWelcome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.rtbWelcome, "rtbWelcome");
             this.rtbWelcome.Name = "rtbWelcome";
             this.rtbWelcome.ReadOnly = true;
             // 
@@ -251,9 +251,9 @@
             // 
             // cbSpreadsheetTable
             // 
+            resources.ApplyResources(this.cbSpreadsheetTable, "cbSpreadsheetTable");
             this.cbSpreadsheetTable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSpreadsheetTable.FormattingEnabled = true;
-            resources.ApplyResources(this.cbSpreadsheetTable, "cbSpreadsheetTable");
             this.cbSpreadsheetTable.Name = "cbSpreadsheetTable";
             this.cbSpreadsheetTable.SelectedIndexChanged += new System.EventHandler(this.cbTable_SelectedIndexChanged);
             // 
@@ -271,8 +271,8 @@
             // 
             // tbSpreadsheet
             // 
-            this.tbSpreadsheet.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.tbSpreadsheet, "tbSpreadsheet");
+            this.tbSpreadsheet.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tbSpreadsheet.Name = "tbSpreadsheet";
             // 
             // gbSpreadsheetInformation
@@ -304,9 +304,9 @@
             // 
             // cbDataSourceColumnsExampleSpreadsheet
             // 
+            resources.ApplyResources(this.cbDataSourceColumnsExampleSpreadsheet, "cbDataSourceColumnsExampleSpreadsheet");
             this.cbDataSourceColumnsExampleSpreadsheet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDataSourceColumnsExampleSpreadsheet.FormattingEnabled = true;
-            resources.ApplyResources(this.cbDataSourceColumnsExampleSpreadsheet, "cbDataSourceColumnsExampleSpreadsheet");
             this.cbDataSourceColumnsExampleSpreadsheet.Name = "cbDataSourceColumnsExampleSpreadsheet";
             // 
             // lPossibleRowsValue
@@ -414,8 +414,8 @@
             // 
             // gbOptions
             // 
-            this.gbOptions.Controls.Add(this.cbFinalize);
             resources.ApplyResources(this.gbOptions, "gbOptions");
+            this.gbOptions.Controls.Add(this.cbFinalize);
             this.gbOptions.Name = "gbOptions";
             this.gbOptions.TabStop = false;
             // 
@@ -435,8 +435,8 @@
             // 
             // tbOutputDir
             // 
-            this.tbOutputDir.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.tbOutputDir, "tbOutputDir");
+            this.tbOutputDir.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tbOutputDir.Name = "tbOutputDir";
             // 
             // bSelectOutputPath
