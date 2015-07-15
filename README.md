@@ -15,6 +15,7 @@ BulkPDF automatically recognizes the values in the selected table. Then the colu
 * Relative paths in the configuration file possible
 * Command line tool available
 * Compatible with Acroform and XFA
+* .NET Framework 3.5 (Run with Mono on Linux and Mac)
 
 ## Screenshots
 ![alt tag](http://bulkpdf.de/img/index1_en.png)
