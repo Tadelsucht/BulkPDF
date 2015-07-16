@@ -16,7 +16,6 @@ BulkPDF automatically recognizes the values in the selected table. Then the colu
 * Command line tool available
 * Compatible with Acroform and XFA
 * .NET Framework 3.5 (Run with Mono on Linux and Mac)
-* PDF Creator, PDF Editor, PDF Writer functionality
 
 ## Screenshots
 ![alt tag](http://bulkpdf.de/img/index1_en.png)
