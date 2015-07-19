@@ -1,6 +1,6 @@
 # BulkPDF
 ## What is BulkPDF?
-BulkPDF is a free and easy to use freeware software (Open Source), which allows to automatically fill an existing PDF form with different values. Only a spreadsheet (Microsoft Excel 2007/2010/2013, LibreOffice or OpenOffice Calc) with the desired values is required [BulkPDF.de](http://bulkpdf.de/)
+BulkPDF is a free and easy to use freeware software (Open Source), which allows to automatically fill an existing PDF form with different values. Only a spreadsheet (Microsoft Excel 2007/2010/2013, LibreOffice or OpenOffice Calc) with the desired values is required. [BulkPDF.de](http://bulkpdf.de/)
 
 ## How does it work?
 BulkPDF automatically recognizes the values in the selected table. Then the column names must be manually assigned to the form fields. After the fill progress have started, BulkPDF will go through line by line and write the cell value into the form.
