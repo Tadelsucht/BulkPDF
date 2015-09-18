@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,6 +7,7 @@ using System.Collections;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.text.exceptions;
+using System.Text.RegularExpressions;
 
 namespace BulkPDF
 {
@@ -28,6 +29,7 @@ namespace BulkPDF
             get { return isXFA; }
         }
         bool isXFA = false;
+        bool isDynamicXFA = false;
 
         struct FieldWriteData
         {
@@ -35,7 +37,7 @@ namespace BulkPDF
             public string Value;
             public bool MakeReadOnly;
         }
-       
+
         public void Open(String filePath)
         {
             try
@@ -54,6 +56,15 @@ namespace BulkPDF
             if (xfa != null && xfa.XfaPresent)
             {
                 isXFA = true;
+
+                if (xfa.Reader.AcroFields.Fields.Keys.Count == 0)
+                {
+                    isDynamicXFA = true;
+                }
+                else
+                {
+                    isDynamicXFA = false;
+                }
             }
             else
             {
@@ -77,13 +88,12 @@ namespace BulkPDF
             // Fill
             foreach (var field in writerFieldList)
             {
+                // Write
                 if (isXFA)
                 {
-                    XfaForm xfa = pdfStamper.AcroFields.Xfa;
-                    var dataNodes = xfa.DatasetsNode;
-                    var node = xfa.FindDatasetsNode(field.Name);
+                    var node = pdfStamper.AcroFields.Xfa.FindDatasetsNode(field.Name);
                     var text = node.OwnerDocument.CreateTextNode(field.Value);
-                    node.AppendChild(text);                   
+                    node.AppendChild(text);
 
                     pdfStamper.AcroFields.Xfa.Changed = true;
                 }
@@ -105,15 +115,44 @@ namespace BulkPDF
                     pdfStamper.AcroFields.SetField(field.Name, value);
                 }
 
+                // Read Only
                 if (field.MakeReadOnly)
-                    pdfStamper.AcroFields.SetFieldProperty(field.Name, "setfflags", PdfFormField.FF_READ_ONLY, null);
+                {
+                    if (isDynamicXFA)
+                    {
+                        // Read only dynamic XFAs
+                        if (field.MakeReadOnly && isDynamicXFA)
+                        {
+                            string name = Regex.Match(field.Name, @"([A-Za-z0-9]+)(\[[0-9]+\]|)$").Groups[1].Value;
+                            for (int i = 0; i < pdfStamper.AcroFields.Xfa.DomDocument.SelectNodes("//*[@name='" + name + "']").Count; i++)
+                            {
+                                var attr = pdfStamper.AcroFields.Xfa.DomDocument.CreateAttribute("access");
+                                attr.Value = "readOnly";
+                                pdfStamper.AcroFields.Xfa.DomDocument.SelectNodes("//*[@name='" + name + "']")[i].Attributes.Append(attr);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        // Read only for not dynamic XFAs
+                        pdfStamper.AcroFields.SetFieldProperty(field.Name, "setfflags", PdfFormField.FF_READ_ONLY, null);
+                    }
+                }
             }
-            
 
             // Global Finalize
             if (finalize)
-                foreach(var field in ListFields())
-                    pdfStamper.AcroFields.SetFieldProperty(field.Name, "setfflags", PdfFormField.FF_READ_ONLY, null);
+            {
+                if (isDynamicXFA)
+                {
+                    pdfStamper.AcroFields.Xfa.FillXfaForm(pdfStamper.AcroFields.Xfa.DatasetsNode, true);
+                }
+                else
+                {
+                    foreach (var field in ListFields())
+                        pdfStamper.AcroFields.SetFieldProperty(field.Name, "setfflags", PdfFormField.FF_READ_ONLY, null);
+                }
+            }
 
 
             pdfStamper.Close();
@@ -149,6 +188,20 @@ namespace BulkPDF
 
         public List<PDFField> ListFields()
         {
+            XfaForm xfa = new XfaForm(pdfReader);
+            if (isDynamicXFA)
+            {
+                var acroFields = pdfReader.AcroFields;
+                return ListDynamicXFAFields(acroFields.Xfa.DatasetsNode.FirstChild);
+            }
+            else
+            {
+                return ListGenericFields();
+            }
+        }
+
+        private List<PDFField> ListGenericFields()
+        {
             var fields = new List<PDFField>();
             var acroFields = pdfReader.AcroFields;
 
@@ -172,20 +225,49 @@ namespace BulkPDF
                         }
                         catch (Exception)
                         {
-                            pdfField.Typ = "?";
+                            pdfField.Typ = "";
                         }
 
                         fields.Add(pdfField);
                     }
                 }
 
-
             return fields;
         }
 
-        public bool CheckPDFCompatibility()
+        private List<PDFField> ListDynamicXFAFields(System.Xml.XmlNode n)
         {
-            return false;
+            List<PDFField> pdfFields = new List<PDFField>();
+
+            foreach (System.Xml.XmlNode child in n.ChildNodes) // > 0 Childs == Group
+                pdfFields.AddRange(ListDynamicXFAFields(child)); // Search field
+
+            if (n.ChildNodes.Count == 0) // 0 Childs == Field 
+            {
+                var acroFields = pdfReader.AcroFields;
+
+                var pdfField = new PDFField();
+
+                // If a value is set the value of n.Name would be "#text"
+                if ((n.Name.ToCharArray(0, 1))[0] != '#')
+                {
+                    pdfField.Name = acroFields.GetTranslatedFieldName(n.Name);
+                }
+                else
+                {
+                    pdfField.Name = acroFields.GetTranslatedFieldName(n.ParentNode.Name);
+                }
+
+                pdfField.CurrentValue = n.Value;
+
+                pdfField.Typ = "";
+
+                pdfFields.Add(pdfField);
+
+                return pdfFields;
+            }
+
+            return pdfFields;
         }
     }
 }
