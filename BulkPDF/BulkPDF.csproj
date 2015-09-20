@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -205,11 +205,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BulkPDFConsole\BulkPDFConsole.csproj">
-      <Project>{686c3b64-15a6-4347-b3a2-23da2c6d67f0}</Project>
+      <Project>{686C3B64-15A6-4347-B3A2-23DA2C6D67F0}</Project>
       <Name>BulkPDFConsole</Name>
     </ProjectReference>
     <ProjectReference Include="..\BulkPDFCore\BulkPDFCore.csproj">
-      <Project>{2729dd97-fbac-41ab-8d18-680e2b451d11}</Project>
+      <Project>{2729DD97-FBAC-41AB-8D18-680E2B451D11}</Project>
       <Name>BulkPDFCore</Name>
     </ProjectReference>
   </ItemGroup>

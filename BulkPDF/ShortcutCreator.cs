@@ -50,6 +50,7 @@ namespace BulkPDF
                     shortcut.WorkingDirectory = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
                     shortcut.TargetPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + @"\" + "BulkPDFConsole.exe"; ;
                     shortcut.Save();
+
                     MessageBox.Show(Properties.Resources.MessageFinished);
                 }
             }
