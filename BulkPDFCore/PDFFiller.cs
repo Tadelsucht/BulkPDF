@@ -24,7 +24,7 @@ namespace BulkPDF
                 {
                     if (pdfFields[field].UseValueFromDataSource)
                     {
-                        var value = dataSource.GetField(dataSource.Columns.FindIndex(x => x.StartsWith(pdfFields[field].DataSourceValue)) + 1);
+                        var value = dataSource.GetField(dataSource.Columns.FindIndex(x => x == pdfFields[field].DataSourceValue) + 1);
                         pdf.SetFieldValue(field, value, pdfFields[field].MakeReadOnly);
                     }
                 }
