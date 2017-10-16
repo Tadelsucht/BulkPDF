@@ -659,5 +659,11 @@ namespace BulkPDF
         {
             System.Diagnostics.Process.Start("mailto:support@bulkpdf.de");
         }
+
+        private void MainForm_Shown(object sender, EventArgs e)
+        {
+            var donateForm = new DonateForm();
+            donateForm.ShowDialog();
+        }
     }
 }

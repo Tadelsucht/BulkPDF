@@ -572,7 +572,7 @@
     <value>seperatorLine1</value>
   </data>
   <data name="&gt;&gt;seperatorLine1.Type" xml:space="preserve">
-    <value>BulkPDF.SeperatorLine, BulkPDF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>BulkPDF.SeperatorLine, BulkPDF, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;seperatorLine1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1975,7 +1975,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>wizardPages</value>
   </data>
   <data name="&gt;&gt;wizardPages.Type" xml:space="preserve">
-    <value>BulkPDF.WizardPages, BulkPDF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>BulkPDF.WizardPages, BulkPDF, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;wizardPages.Parent" xml:space="preserve">
     <value>$this</value>

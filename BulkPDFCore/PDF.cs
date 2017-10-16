@@ -112,7 +112,8 @@ namespace BulkPDF
                         }
                     }
 
-                    pdfStamper.AcroFields.SetField(field.Name, value);
+                    bool test = pdfStamper.AcroFields.SetField(field.Name, value);
+                    Console.WriteLine(test); 
                 }
 
                 // Read Only

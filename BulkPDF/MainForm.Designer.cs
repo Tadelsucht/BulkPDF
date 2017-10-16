@@ -542,6 +542,7 @@
             this.Controls.Add(this.wizardPages);
             this.Name = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.Shown += new System.EventHandler(this.MainForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.wizardPages.ResumeLayout(false);
             this.tpWelcome.ResumeLayout(false);

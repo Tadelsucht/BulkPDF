@@ -81,6 +81,12 @@
     <Compile Include="ExceptionForm.Designer.cs">
       <DependentUpon>ExceptionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DonateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonateForm.Designer.cs">
+      <DependentUpon>DonateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Licenses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,12 @@
     </Compile>
     <EmbeddedResource Include="ExceptionForm.resx">
       <DependentUpon>ExceptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonateForm.de.resx">
+      <DependentUpon>DonateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonateForm.resx">
+      <DependentUpon>DonateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FieldOptionForm.de.resx">
       <DependentUpon>FieldOptionForm.cs</DependentUpon>
