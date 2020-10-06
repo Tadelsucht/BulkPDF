@@ -112,26 +112,26 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="bNext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
   <data name="bNext.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bNext.Location" type="System.Drawing.Point, System.Drawing">
     <value>372, 326</value>
   </data>
   <data name="bNext.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="bNext.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
@@ -142,7 +142,7 @@
     <value>bNext</value>
   </data>
   <data name="&gt;&gt;bNext.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bNext.Parent" xml:space="preserve">
     <value>$this</value>
@@ -172,7 +172,7 @@
     <value>bBack</value>
   </data>
   <data name="&gt;&gt;bBack.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bBack.Parent" xml:space="preserve">
     <value>$this</value>
@@ -202,7 +202,7 @@
     <value>bFinish</value>
   </data>
   <data name="&gt;&gt;bFinish.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bFinish.Parent" xml:space="preserve">
     <value>$this</value>
@@ -509,7 +509,7 @@
     <value>pictureBox1</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -539,7 +539,7 @@
     <value>bDonate</value>
   </data>
   <data name="&gt;&gt;bDonate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bDonate.Parent" xml:space="preserve">
     <value>$this</value>
@@ -608,7 +608,7 @@
     <value>llSupport</value>
   </data>
   <data name="&gt;&gt;llSupport.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;llSupport.Parent" xml:space="preserve">
     <value>tpWelcome</value>
@@ -641,7 +641,7 @@
     <value>llBulkPDFde</value>
   </data>
   <data name="&gt;&gt;llBulkPDFde.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;llBulkPDFde.Parent" xml:space="preserve">
     <value>tpWelcome</value>
@@ -674,7 +674,7 @@
     <value>llLicenses</value>
   </data>
   <data name="&gt;&gt;llLicenses.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;llLicenses.Parent" xml:space="preserve">
     <value>tpWelcome</value>
@@ -703,7 +703,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>rtbWelcome</value>
   </data>
   <data name="&gt;&gt;rtbWelcome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;rtbWelcome.Parent" xml:space="preserve">
     <value>tpWelcome</value>
@@ -730,7 +730,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>lVersion</value>
   </data>
   <data name="&gt;&gt;lVersion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lVersion.Parent" xml:space="preserve">
     <value>tpWelcome</value>
@@ -763,7 +763,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>lBulkPDF</value>
   </data>
   <data name="&gt;&gt;lBulkPDF.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lBulkPDF.Parent" xml:space="preserve">
     <value>tpWelcome</value>
@@ -793,7 +793,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>bLoadConfiguration</value>
   </data>
   <data name="&gt;&gt;bLoadConfiguration.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bLoadConfiguration.Parent" xml:space="preserve">
     <value>tpWelcome</value>
@@ -823,7 +823,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>llDokumentation</value>
   </data>
   <data name="&gt;&gt;llDokumentation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;llDokumentation.Parent" xml:space="preserve">
     <value>tpWelcome</value>
@@ -850,7 +850,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>tpWelcome</value>
   </data>
   <data name="&gt;&gt;tpWelcome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tpWelcome.Parent" xml:space="preserve">
     <value>wizardPages</value>
@@ -880,7 +880,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>rtbReselectWarning</value>
   </data>
   <data name="&gt;&gt;rtbReselectWarning.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;rtbReselectWarning.Parent" xml:space="preserve">
     <value>tbDataSourceSelect</value>
@@ -907,7 +907,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>cbSpreadsheetTable</value>
   </data>
   <data name="&gt;&gt;cbSpreadsheetTable.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cbSpreadsheetTable.Parent" xml:space="preserve">
     <value>gbSpreadsheet</value>
@@ -937,7 +937,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>lTable</value>
   </data>
   <data name="&gt;&gt;lTable.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lTable.Parent" xml:space="preserve">
     <value>gbSpreadsheet</value>
@@ -967,7 +967,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>bSelectSpreadsheet</value>
   </data>
   <data name="&gt;&gt;bSelectSpreadsheet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bSelectSpreadsheet.Parent" xml:space="preserve">
     <value>gbSpreadsheet</value>
@@ -991,7 +991,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>tbSpreadsheet</value>
   </data>
   <data name="&gt;&gt;tbSpreadsheet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbSpreadsheet.Parent" xml:space="preserve">
     <value>gbSpreadsheet</value>
@@ -1015,7 +1015,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>gbSpreadsheet</value>
   </data>
   <data name="&gt;&gt;gbSpreadsheet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;gbSpreadsheet.Parent" xml:space="preserve">
     <value>tbDataSourceSelect</value>
@@ -1048,7 +1048,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>lPossibleColumnsValue</value>
   </data>
   <data name="&gt;&gt;lPossibleColumnsValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lPossibleColumnsValue.Parent" xml:space="preserve">
     <value>gbSpreadsheetInformation</value>
@@ -1078,7 +1078,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>lPossibleColumns</value>
   </data>
   <data name="&gt;&gt;lPossibleColumns.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lPossibleColumns.Parent" xml:space="preserve">
     <value>gbSpreadsheetInformation</value>
@@ -1108,7 +1108,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>lColumns</value>
   </data>
   <data name="&gt;&gt;lColumns.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lColumns.Parent" xml:space="preserve">
     <value>gbSpreadsheetInformation</value>
@@ -1132,7 +1132,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>cbDataSourceColumnsExampleSpreadsheet</value>
   </data>
   <data name="&gt;&gt;cbDataSourceColumnsExampleSpreadsheet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cbDataSourceColumnsExampleSpreadsheet.Parent" xml:space="preserve">
     <value>gbSpreadsheetInformation</value>
@@ -1162,7 +1162,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>lPossibleRowsValue</value>
   </data>
   <data name="&gt;&gt;lPossibleRowsValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lPossibleRowsValue.Parent" xml:space="preserve">
     <value>gbSpreadsheetInformation</value>
@@ -1192,7 +1192,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>lPossibleRows</value>
   </data>
   <data name="&gt;&gt;lPossibleRows.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lPossibleRows.Parent" xml:space="preserve">
     <value>gbSpreadsheetInformation</value>
@@ -1216,7 +1216,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>gbSpreadsheetInformation</value>
   </data>
   <data name="&gt;&gt;gbSpreadsheetInformation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;gbSpreadsheetInformation.Parent" xml:space="preserve">
     <value>tbDataSourceSelect</value>
@@ -1246,7 +1246,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>tbDataSourceSelect</value>
   </data>
   <data name="&gt;&gt;tbDataSourceSelect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbDataSourceSelect.Parent" xml:space="preserve">
     <value>wizardPages</value>
@@ -1276,7 +1276,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>tbFormTyp</value>
   </data>
   <data name="&gt;&gt;tbFormTyp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbFormTyp.Parent" xml:space="preserve">
     <value>tpPDFSelect</value>
@@ -1287,7 +1287,7 @@ We recommend to look at the include sample files and to visit the documentation 
   <data name="dgvBulkPDF.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <metadata name="ColField.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="ColField.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="ColField.HeaderText" xml:space="preserve">
@@ -1296,13 +1296,13 @@ We recommend to look at the include sample files and to visit the documentation 
   <data name="ColField.MinimumWidth" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <metadata name="ColTyp.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="ColTyp.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="ColTyp.HeaderText" xml:space="preserve">
     <value>Typ</value>
   </data>
-  <metadata name="ColValue.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="ColValue.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="ColValue.HeaderText" xml:space="preserve">
@@ -1311,7 +1311,7 @@ We recommend to look at the include sample files and to visit the documentation 
   <data name="ColValue.MinimumWidth" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <metadata name="ColOption.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="ColOption.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="ColOption.HeaderText" xml:space="preserve">
@@ -1333,7 +1333,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>dgvBulkPDF</value>
   </data>
   <data name="&gt;&gt;dgvBulkPDF.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dgvBulkPDF.Parent" xml:space="preserve">
     <value>tpPDFSelect</value>
@@ -1357,7 +1357,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>tbPDF</value>
   </data>
   <data name="&gt;&gt;tbPDF.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbPDF.Parent" xml:space="preserve">
     <value>tpPDFSelect</value>
@@ -1384,7 +1384,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>bSelectPDF</value>
   </data>
   <data name="&gt;&gt;bSelectPDF.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bSelectPDF.Parent" xml:space="preserve">
     <value>tpPDFSelect</value>
@@ -1411,43 +1411,13 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>tpPDFSelect</value>
   </data>
   <data name="&gt;&gt;tpPDFSelect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tpPDFSelect.Parent" xml:space="preserve">
     <value>wizardPages</value>
   </data>
   <data name="&gt;&gt;tpPDFSelect.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="bShortcutCreator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="bShortcutCreator.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bShortcutCreator.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 261</value>
-  </data>
-  <data name="bShortcutCreator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 23</value>
-  </data>
-  <data name="bShortcutCreator.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="bShortcutCreator.Text" xml:space="preserve">
-    <value>Quick shortcut</value>
-  </data>
-  <data name="&gt;&gt;bShortcutCreator.Name" xml:space="preserve">
-    <value>bShortcutCreator</value>
-  </data>
-  <data name="&gt;&gt;bShortcutCreator.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bShortcutCreator.Parent" xml:space="preserve">
-    <value>tpFinish</value>
-  </data>
-  <data name="&gt;&gt;bShortcutCreator.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="gbOptions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -1474,7 +1444,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>cbFinalize</value>
   </data>
   <data name="&gt;&gt;cbFinalize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cbFinalize.Parent" xml:space="preserve">
     <value>gbOptions</value>
@@ -1498,13 +1468,13 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>gbOptions</value>
   </data>
   <data name="&gt;&gt;gbOptions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;gbOptions.Parent" xml:space="preserve">
     <value>tpFinish</value>
   </data>
   <data name="&gt;&gt;gbOptions.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="gbOuput.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -1525,7 +1495,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>tbOutputDir</value>
   </data>
   <data name="&gt;&gt;tbOutputDir.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbOutputDir.Parent" xml:space="preserve">
     <value>gbOuput</value>
@@ -1555,7 +1525,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>bSelectOutputPath</value>
   </data>
   <data name="&gt;&gt;bSelectOutputPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bSelectOutputPath.Parent" xml:space="preserve">
     <value>gbOuput</value>
@@ -1579,13 +1549,13 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>gbOuput</value>
   </data>
   <data name="&gt;&gt;gbOuput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;gbOuput.Parent" xml:space="preserve">
     <value>tpFinish</value>
   </data>
   <data name="&gt;&gt;gbOuput.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="bSaveConfiguration.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left, Right</value>
@@ -1594,10 +1564,10 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>NoControl</value>
   </data>
   <data name="bSaveConfiguration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 261</value>
+    <value>8, 261</value>
   </data>
   <data name="bSaveConfiguration.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 23</value>
+    <value>313, 23</value>
   </data>
   <data name="bSaveConfiguration.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1609,13 +1579,13 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>bSaveConfiguration</value>
   </data>
   <data name="&gt;&gt;bSaveConfiguration.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bSaveConfiguration.Parent" xml:space="preserve">
     <value>tpFinish</value>
   </data>
   <data name="&gt;&gt;bSaveConfiguration.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="gbFilename.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -1645,7 +1615,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>cbRowNumberFilename</value>
   </data>
   <data name="&gt;&gt;cbRowNumberFilename.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cbRowNumberFilename.Parent" xml:space="preserve">
     <value>gbFilename</value>
@@ -1678,7 +1648,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>lPlus3</value>
   </data>
   <data name="&gt;&gt;lPlus3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lPlus3.Parent" xml:space="preserve">
     <value>gbFilename</value>
@@ -1702,7 +1672,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>tbExampleFilename</value>
   </data>
   <data name="&gt;&gt;tbExampleFilename.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbExampleFilename.Parent" xml:space="preserve">
     <value>gbFilename</value>
@@ -1735,7 +1705,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>lExampleFilename</value>
   </data>
   <data name="&gt;&gt;lExampleFilename.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lExampleFilename.Parent" xml:space="preserve">
     <value>gbFilename</value>
@@ -1765,7 +1735,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>cbUseValueFromDataSource</value>
   </data>
   <data name="&gt;&gt;cbUseValueFromDataSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cbUseValueFromDataSource.Parent" xml:space="preserve">
     <value>gbFilename</value>
@@ -1798,7 +1768,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>lPlus2</value>
   </data>
   <data name="&gt;&gt;lPlus2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lPlus2.Parent" xml:space="preserve">
     <value>gbFilename</value>
@@ -1831,7 +1801,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>lPlus1</value>
   </data>
   <data name="&gt;&gt;lPlus1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lPlus1.Parent" xml:space="preserve">
     <value>gbFilename</value>
@@ -1855,7 +1825,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>tbSuffix</value>
   </data>
   <data name="&gt;&gt;tbSuffix.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbSuffix.Parent" xml:space="preserve">
     <value>gbFilename</value>
@@ -1879,7 +1849,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>cbDataSourceColumnsFilename</value>
   </data>
   <data name="&gt;&gt;cbDataSourceColumnsFilename.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cbDataSourceColumnsFilename.Parent" xml:space="preserve">
     <value>gbFilename</value>
@@ -1903,7 +1873,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>tbPrefix</value>
   </data>
   <data name="&gt;&gt;tbPrefix.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tbPrefix.Parent" xml:space="preserve">
     <value>gbFilename</value>
@@ -1927,13 +1897,13 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>gbFilename</value>
   </data>
   <data name="&gt;&gt;gbFilename.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;gbFilename.Parent" xml:space="preserve">
     <value>tpFinish</value>
   </data>
   <data name="&gt;&gt;gbFilename.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="tpFinish.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -1954,7 +1924,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>tpFinish</value>
   </data>
   <data name="&gt;&gt;tpFinish.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tpFinish.Parent" xml:space="preserve">
     <value>wizardPages</value>
@@ -1983,7 +1953,7 @@ We recommend to look at the include sample files and to visit the documentation 
   <data name="&gt;&gt;wizardPages.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
@@ -2364,30 +2334,30 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>ColField</value>
   </data>
   <data name="&gt;&gt;ColField.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ColTyp.Name" xml:space="preserve">
     <value>ColTyp</value>
   </data>
   <data name="&gt;&gt;ColTyp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ColValue.Name" xml:space="preserve">
     <value>ColValue</value>
   </data>
   <data name="&gt;&gt;ColValue.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ColOption.Name" xml:space="preserve">
     <value>ColOption</value>
   </data>
   <data name="&gt;&gt;ColOption.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

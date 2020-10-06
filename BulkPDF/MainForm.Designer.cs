@@ -69,7 +69,6 @@
             this.tbPDF = new System.Windows.Forms.TextBox();
             this.bSelectPDF = new System.Windows.Forms.Button();
             this.tpFinish = new System.Windows.Forms.TabPage();
-            this.bShortcutCreator = new System.Windows.Forms.Button();
             this.gbOptions = new System.Windows.Forms.GroupBox();
             this.cbFinalize = new System.Windows.Forms.CheckBox();
             this.gbOuput = new System.Windows.Forms.GroupBox();
@@ -397,20 +396,12 @@
             // tpFinish
             // 
             this.tpFinish.BackColor = System.Drawing.SystemColors.Control;
-            this.tpFinish.Controls.Add(this.bShortcutCreator);
             this.tpFinish.Controls.Add(this.gbOptions);
             this.tpFinish.Controls.Add(this.gbOuput);
             this.tpFinish.Controls.Add(this.bSaveConfiguration);
             this.tpFinish.Controls.Add(this.gbFilename);
             resources.ApplyResources(this.tpFinish, "tpFinish");
             this.tpFinish.Name = "tpFinish";
-            // 
-            // bShortcutCreator
-            // 
-            resources.ApplyResources(this.bShortcutCreator, "bShortcutCreator");
-            this.bShortcutCreator.Name = "bShortcutCreator";
-            this.bShortcutCreator.UseVisualStyleBackColor = true;
-            this.bShortcutCreator.Click += new System.EventHandler(this.bShortcutCreator_Click);
             // 
             // gbOptions
             // 
@@ -620,7 +611,6 @@
         private System.Windows.Forms.CheckBox cbFinalize;
         private System.Windows.Forms.TextBox tbFormTyp;
         private System.Windows.Forms.RichTextBox rtbReselectWarning;
-        private System.Windows.Forms.Button bShortcutCreator;
         private System.Windows.Forms.LinkLabel llSupport;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColField;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColTyp;
