@@ -148,7 +148,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bNext.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="bBack.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -178,7 +178,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bBack.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="bFinish.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -208,7 +208,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bFinish.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -515,7 +515,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="bDonate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -547,39 +547,6 @@
   <data name="&gt;&gt;bDonate.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="seperatorLine1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="seperatorLine1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="seperatorLine1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-13, 414</value>
-  </data>
-  <data name="seperatorLine1.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>2147483647, 2</value>
-  </data>
-  <data name="seperatorLine1.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>500, 2</value>
-  </data>
-  <data name="seperatorLine1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>500, 2</value>
-  </data>
-  <data name="seperatorLine1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;seperatorLine1.Name" xml:space="preserve">
-    <value>seperatorLine1</value>
-  </data>
-  <data name="&gt;&gt;seperatorLine1.Type" xml:space="preserve">
-    <value>BulkPDF.SeperatorLine, BulkPDF, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;seperatorLine1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;seperatorLine1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="wizardPages.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
@@ -593,7 +560,7 @@
     <value>NoControl</value>
   </data>
   <data name="llSupport.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 367</value>
+    <value>76, 376</value>
   </data>
   <data name="llSupport.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 13</value>
@@ -626,7 +593,7 @@
     <value>NoControl</value>
   </data>
   <data name="llBulkPDFde.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 367</value>
+    <value>6, 376</value>
   </data>
   <data name="llBulkPDFde.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 13</value>
@@ -659,7 +626,7 @@
     <value>NoControl</value>
   </data>
   <data name="llLicenses.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 133</value>
+    <value>330, 376</value>
   </data>
   <data name="llLicenses.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 13</value>
@@ -689,7 +656,7 @@
     <value>10, 43</value>
   </data>
   <data name="rtbWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>419, 197</value>
+    <value>419, 206</value>
   </data>
   <data name="rtbWelcome.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -772,16 +739,16 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>5</value>
   </data>
   <data name="bLoadConfiguration.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
+    <value>Top, Left, Right</value>
   </data>
   <data name="bLoadConfiguration.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="bLoadConfiguration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 282</value>
+    <value>6, 255</value>
   </data>
   <data name="bLoadConfiguration.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 24</value>
+    <value>417, 24</value>
   </data>
   <data name="bLoadConfiguration.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -808,7 +775,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>NoControl</value>
   </data>
   <data name="llDokumentation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 367</value>
+    <value>126, 376</value>
   </data>
   <data name="llDokumentation.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 18</value>
@@ -838,7 +805,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tpWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 385</value>
+    <value>429, 394</value>
   </data>
   <data name="tpWelcome.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -857,6 +824,474 @@ We recommend to look at the include sample files and to visit the documentation 
   </data>
   <data name="&gt;&gt;tpWelcome.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;rtbReselectWarning.Name" xml:space="preserve">
+    <value>rtbReselectWarning</value>
+  </data>
+  <data name="&gt;&gt;rtbReselectWarning.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rtbReselectWarning.Parent" xml:space="preserve">
+    <value>tbDataSourceSelect</value>
+  </data>
+  <data name="&gt;&gt;rtbReselectWarning.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gbSpreadsheet.Name" xml:space="preserve">
+    <value>gbSpreadsheet</value>
+  </data>
+  <data name="&gt;&gt;gbSpreadsheet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbSpreadsheet.Parent" xml:space="preserve">
+    <value>tbDataSourceSelect</value>
+  </data>
+  <data name="&gt;&gt;gbSpreadsheet.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;gbSpreadsheetInformation.Name" xml:space="preserve">
+    <value>gbSpreadsheetInformation</value>
+  </data>
+  <data name="&gt;&gt;gbSpreadsheetInformation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbSpreadsheetInformation.Parent" xml:space="preserve">
+    <value>tbDataSourceSelect</value>
+  </data>
+  <data name="&gt;&gt;gbSpreadsheetInformation.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tbDataSourceSelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tbDataSourceSelect.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="tbDataSourceSelect.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tbDataSourceSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>429, 385</value>
+  </data>
+  <data name="tbDataSourceSelect.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tbDataSourceSelect.Text" xml:space="preserve">
+    <value>DataSourceSelect</value>
+  </data>
+  <data name="&gt;&gt;tbDataSourceSelect.Name" xml:space="preserve">
+    <value>tbDataSourceSelect</value>
+  </data>
+  <data name="&gt;&gt;tbDataSourceSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbDataSourceSelect.Parent" xml:space="preserve">
+    <value>wizardPages</value>
+  </data>
+  <data name="&gt;&gt;tbDataSourceSelect.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbFormTyp.Name" xml:space="preserve">
+    <value>tbFormTyp</value>
+  </data>
+  <data name="&gt;&gt;tbFormTyp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbFormTyp.Parent" xml:space="preserve">
+    <value>tpPDFSelect</value>
+  </data>
+  <data name="&gt;&gt;tbFormTyp.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgvBulkPDF.Name" xml:space="preserve">
+    <value>dgvBulkPDF</value>
+  </data>
+  <data name="&gt;&gt;dgvBulkPDF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvBulkPDF.Parent" xml:space="preserve">
+    <value>tpPDFSelect</value>
+  </data>
+  <data name="&gt;&gt;dgvBulkPDF.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbPDF.Name" xml:space="preserve">
+    <value>tbPDF</value>
+  </data>
+  <data name="&gt;&gt;tbPDF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbPDF.Parent" xml:space="preserve">
+    <value>tpPDFSelect</value>
+  </data>
+  <data name="&gt;&gt;tbPDF.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;bSelectPDF.Name" xml:space="preserve">
+    <value>bSelectPDF</value>
+  </data>
+  <data name="&gt;&gt;bSelectPDF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bSelectPDF.Parent" xml:space="preserve">
+    <value>tpPDFSelect</value>
+  </data>
+  <data name="&gt;&gt;bSelectPDF.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tpPDFSelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tpPDFSelect.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpPDFSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>429, 385</value>
+  </data>
+  <data name="tpPDFSelect.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tpPDFSelect.Text" xml:space="preserve">
+    <value>PDFSelect</value>
+  </data>
+  <data name="&gt;&gt;tpPDFSelect.Name" xml:space="preserve">
+    <value>tpPDFSelect</value>
+  </data>
+  <data name="&gt;&gt;tpPDFSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpPDFSelect.Parent" xml:space="preserve">
+    <value>wizardPages</value>
+  </data>
+  <data name="&gt;&gt;tpPDFSelect.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="gbOptions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;cbUnicode.Name" xml:space="preserve">
+    <value>cbUnicode</value>
+  </data>
+  <data name="&gt;&gt;cbUnicode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbUnicode.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;cbUnicode.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cbFinalize.Name" xml:space="preserve">
+    <value>cbFinalize</value>
+  </data>
+  <data name="&gt;&gt;cbFinalize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbFinalize.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;cbFinalize.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gbOptions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 125</value>
+  </data>
+  <data name="gbOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>413, 44</value>
+  </data>
+  <data name="gbOptions.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="gbOptions.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="&gt;&gt;gbOptions.Name" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;gbOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbOptions.Parent" xml:space="preserve">
+    <value>tpFinish</value>
+  </data>
+  <data name="&gt;&gt;gbOptions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gbOuput.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;tbOutputDir.Name" xml:space="preserve">
+    <value>tbOutputDir</value>
+  </data>
+  <data name="&gt;&gt;tbOutputDir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbOutputDir.Parent" xml:space="preserve">
+    <value>gbOuput</value>
+  </data>
+  <data name="&gt;&gt;tbOutputDir.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bSelectOutputPath.Name" xml:space="preserve">
+    <value>bSelectOutputPath</value>
+  </data>
+  <data name="&gt;&gt;bSelectOutputPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bSelectOutputPath.Parent" xml:space="preserve">
+    <value>gbOuput</value>
+  </data>
+  <data name="&gt;&gt;bSelectOutputPath.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gbOuput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 175</value>
+  </data>
+  <data name="gbOuput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>413, 50</value>
+  </data>
+  <data name="gbOuput.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="gbOuput.Text" xml:space="preserve">
+    <value>Output Path</value>
+  </data>
+  <data name="&gt;&gt;gbOuput.Name" xml:space="preserve">
+    <value>gbOuput</value>
+  </data>
+  <data name="&gt;&gt;gbOuput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbOuput.Parent" xml:space="preserve">
+    <value>tpFinish</value>
+  </data>
+  <data name="&gt;&gt;gbOuput.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bSaveConfiguration.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="bSaveConfiguration.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bSaveConfiguration.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 271</value>
+  </data>
+  <data name="bSaveConfiguration.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 23</value>
+  </data>
+  <data name="bSaveConfiguration.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="bSaveConfiguration.Text" xml:space="preserve">
+    <value>Save Configuration</value>
+  </data>
+  <data name="&gt;&gt;bSaveConfiguration.Name" xml:space="preserve">
+    <value>bSaveConfiguration</value>
+  </data>
+  <data name="&gt;&gt;bSaveConfiguration.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bSaveConfiguration.Parent" xml:space="preserve">
+    <value>tpFinish</value>
+  </data>
+  <data name="&gt;&gt;bSaveConfiguration.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="gbFilename.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;cbRowNumberFilename.Name" xml:space="preserve">
+    <value>cbRowNumberFilename</value>
+  </data>
+  <data name="&gt;&gt;cbRowNumberFilename.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbRowNumberFilename.Parent" xml:space="preserve">
+    <value>gbFilename</value>
+  </data>
+  <data name="&gt;&gt;cbRowNumberFilename.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lPlus3.Name" xml:space="preserve">
+    <value>lPlus3</value>
+  </data>
+  <data name="&gt;&gt;lPlus3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lPlus3.Parent" xml:space="preserve">
+    <value>gbFilename</value>
+  </data>
+  <data name="&gt;&gt;lPlus3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tbExampleFilename.Name" xml:space="preserve">
+    <value>tbExampleFilename</value>
+  </data>
+  <data name="&gt;&gt;tbExampleFilename.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbExampleFilename.Parent" xml:space="preserve">
+    <value>gbFilename</value>
+  </data>
+  <data name="&gt;&gt;tbExampleFilename.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lExampleFilename.Name" xml:space="preserve">
+    <value>lExampleFilename</value>
+  </data>
+  <data name="&gt;&gt;lExampleFilename.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lExampleFilename.Parent" xml:space="preserve">
+    <value>gbFilename</value>
+  </data>
+  <data name="&gt;&gt;lExampleFilename.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cbUseValueFromDataSource.Name" xml:space="preserve">
+    <value>cbUseValueFromDataSource</value>
+  </data>
+  <data name="&gt;&gt;cbUseValueFromDataSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbUseValueFromDataSource.Parent" xml:space="preserve">
+    <value>gbFilename</value>
+  </data>
+  <data name="&gt;&gt;cbUseValueFromDataSource.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lPlus2.Name" xml:space="preserve">
+    <value>lPlus2</value>
+  </data>
+  <data name="&gt;&gt;lPlus2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lPlus2.Parent" xml:space="preserve">
+    <value>gbFilename</value>
+  </data>
+  <data name="&gt;&gt;lPlus2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lPlus1.Name" xml:space="preserve">
+    <value>lPlus1</value>
+  </data>
+  <data name="&gt;&gt;lPlus1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lPlus1.Parent" xml:space="preserve">
+    <value>gbFilename</value>
+  </data>
+  <data name="&gt;&gt;lPlus1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tbSuffix.Name" xml:space="preserve">
+    <value>tbSuffix</value>
+  </data>
+  <data name="&gt;&gt;tbSuffix.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbSuffix.Parent" xml:space="preserve">
+    <value>gbFilename</value>
+  </data>
+  <data name="&gt;&gt;tbSuffix.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;cbDataSourceColumnsFilename.Name" xml:space="preserve">
+    <value>cbDataSourceColumnsFilename</value>
+  </data>
+  <data name="&gt;&gt;cbDataSourceColumnsFilename.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbDataSourceColumnsFilename.Parent" xml:space="preserve">
+    <value>gbFilename</value>
+  </data>
+  <data name="&gt;&gt;cbDataSourceColumnsFilename.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;tbPrefix.Name" xml:space="preserve">
+    <value>tbPrefix</value>
+  </data>
+  <data name="&gt;&gt;tbPrefix.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbPrefix.Parent" xml:space="preserve">
+    <value>gbFilename</value>
+  </data>
+  <data name="&gt;&gt;tbPrefix.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="gbFilename.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 6</value>
+  </data>
+  <data name="gbFilename.Size" type="System.Drawing.Size, System.Drawing">
+    <value>413, 113</value>
+  </data>
+  <data name="gbFilename.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="gbFilename.Text" xml:space="preserve">
+    <value>Filename</value>
+  </data>
+  <data name="&gt;&gt;gbFilename.Name" xml:space="preserve">
+    <value>gbFilename</value>
+  </data>
+  <data name="&gt;&gt;gbFilename.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbFilename.Parent" xml:space="preserve">
+    <value>tpFinish</value>
+  </data>
+  <data name="&gt;&gt;gbFilename.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tpFinish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tpFinish.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpFinish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>429, 394</value>
+  </data>
+  <data name="tpFinish.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tpFinish.Text" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="&gt;&gt;tpFinish.Name" xml:space="preserve">
+    <value>tpFinish</value>
+  </data>
+  <data name="&gt;&gt;tpFinish.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpFinish.Parent" xml:space="preserve">
+    <value>wizardPages</value>
+  </data>
+  <data name="&gt;&gt;tpFinish.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="wizardPages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 0</value>
+  </data>
+  <data name="wizardPages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>437, 420</value>
+  </data>
+  <data name="wizardPages.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;wizardPages.Name" xml:space="preserve">
+    <value>wizardPages</value>
+  </data>
+  <data name="&gt;&gt;wizardPages.Type" xml:space="preserve">
+    <value>BulkPDF.WizardPages, BulkPDF, Version=1.2.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPages.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;wizardPages.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="rtbReselectWarning.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -890,6 +1325,78 @@ We recommend to look at the include sample files and to visit the documentation 
   </data>
   <data name="gbSpreadsheet.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;cbSpreadsheetTable.Name" xml:space="preserve">
+    <value>cbSpreadsheetTable</value>
+  </data>
+  <data name="&gt;&gt;cbSpreadsheetTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbSpreadsheetTable.Parent" xml:space="preserve">
+    <value>gbSpreadsheet</value>
+  </data>
+  <data name="&gt;&gt;cbSpreadsheetTable.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lTable.Name" xml:space="preserve">
+    <value>lTable</value>
+  </data>
+  <data name="&gt;&gt;lTable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lTable.Parent" xml:space="preserve">
+    <value>gbSpreadsheet</value>
+  </data>
+  <data name="&gt;&gt;lTable.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bSelectSpreadsheet.Name" xml:space="preserve">
+    <value>bSelectSpreadsheet</value>
+  </data>
+  <data name="&gt;&gt;bSelectSpreadsheet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bSelectSpreadsheet.Parent" xml:space="preserve">
+    <value>gbSpreadsheet</value>
+  </data>
+  <data name="&gt;&gt;bSelectSpreadsheet.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tbSpreadsheet.Name" xml:space="preserve">
+    <value>tbSpreadsheet</value>
+  </data>
+  <data name="&gt;&gt;tbSpreadsheet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbSpreadsheet.Parent" xml:space="preserve">
+    <value>gbSpreadsheet</value>
+  </data>
+  <data name="&gt;&gt;tbSpreadsheet.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="gbSpreadsheet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="gbSpreadsheet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>412, 124</value>
+  </data>
+  <data name="gbSpreadsheet.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="gbSpreadsheet.Text" xml:space="preserve">
+    <value>Spreadsheet</value>
+  </data>
+  <data name="&gt;&gt;gbSpreadsheet.Name" xml:space="preserve">
+    <value>gbSpreadsheet</value>
+  </data>
+  <data name="&gt;&gt;gbSpreadsheet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbSpreadsheet.Parent" xml:space="preserve">
+    <value>tbDataSourceSelect</value>
+  </data>
+  <data name="&gt;&gt;gbSpreadsheet.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="cbSpreadsheetTable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
@@ -999,32 +1506,104 @@ We recommend to look at the include sample files and to visit the documentation 
   <data name="&gt;&gt;tbSpreadsheet.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="gbSpreadsheet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="gbSpreadsheet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 124</value>
-  </data>
-  <data name="gbSpreadsheet.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="gbSpreadsheet.Text" xml:space="preserve">
-    <value>Spreadsheet</value>
-  </data>
-  <data name="&gt;&gt;gbSpreadsheet.Name" xml:space="preserve">
-    <value>gbSpreadsheet</value>
-  </data>
-  <data name="&gt;&gt;gbSpreadsheet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbSpreadsheet.Parent" xml:space="preserve">
-    <value>tbDataSourceSelect</value>
-  </data>
-  <data name="&gt;&gt;gbSpreadsheet.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="gbSpreadsheetInformation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;lPossibleColumnsValue.Name" xml:space="preserve">
+    <value>lPossibleColumnsValue</value>
+  </data>
+  <data name="&gt;&gt;lPossibleColumnsValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lPossibleColumnsValue.Parent" xml:space="preserve">
+    <value>gbSpreadsheetInformation</value>
+  </data>
+  <data name="&gt;&gt;lPossibleColumnsValue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lPossibleColumns.Name" xml:space="preserve">
+    <value>lPossibleColumns</value>
+  </data>
+  <data name="&gt;&gt;lPossibleColumns.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lPossibleColumns.Parent" xml:space="preserve">
+    <value>gbSpreadsheetInformation</value>
+  </data>
+  <data name="&gt;&gt;lPossibleColumns.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lColumns.Name" xml:space="preserve">
+    <value>lColumns</value>
+  </data>
+  <data name="&gt;&gt;lColumns.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lColumns.Parent" xml:space="preserve">
+    <value>gbSpreadsheetInformation</value>
+  </data>
+  <data name="&gt;&gt;lColumns.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cbDataSourceColumnsExampleSpreadsheet.Name" xml:space="preserve">
+    <value>cbDataSourceColumnsExampleSpreadsheet</value>
+  </data>
+  <data name="&gt;&gt;cbDataSourceColumnsExampleSpreadsheet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbDataSourceColumnsExampleSpreadsheet.Parent" xml:space="preserve">
+    <value>gbSpreadsheetInformation</value>
+  </data>
+  <data name="&gt;&gt;cbDataSourceColumnsExampleSpreadsheet.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lPossibleRowsValue.Name" xml:space="preserve">
+    <value>lPossibleRowsValue</value>
+  </data>
+  <data name="&gt;&gt;lPossibleRowsValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lPossibleRowsValue.Parent" xml:space="preserve">
+    <value>gbSpreadsheetInformation</value>
+  </data>
+  <data name="&gt;&gt;lPossibleRowsValue.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lPossibleRows.Name" xml:space="preserve">
+    <value>lPossibleRows</value>
+  </data>
+  <data name="&gt;&gt;lPossibleRows.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lPossibleRows.Parent" xml:space="preserve">
+    <value>gbSpreadsheetInformation</value>
+  </data>
+  <data name="&gt;&gt;lPossibleRows.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="gbSpreadsheetInformation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 136</value>
+  </data>
+  <data name="gbSpreadsheetInformation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>412, 98</value>
+  </data>
+  <data name="gbSpreadsheetInformation.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="gbSpreadsheetInformation.Text" xml:space="preserve">
+    <value>Spreadsheet information</value>
+  </data>
+  <data name="&gt;&gt;gbSpreadsheetInformation.Name" xml:space="preserve">
+    <value>gbSpreadsheetInformation</value>
+  </data>
+  <data name="&gt;&gt;gbSpreadsheetInformation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbSpreadsheetInformation.Parent" xml:space="preserve">
+    <value>tbDataSourceSelect</value>
+  </data>
+  <data name="&gt;&gt;gbSpreadsheetInformation.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="lPossibleColumnsValue.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1200,60 +1779,6 @@ We recommend to look at the include sample files and to visit the documentation 
   <data name="&gt;&gt;lPossibleRows.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="gbSpreadsheetInformation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 136</value>
-  </data>
-  <data name="gbSpreadsheetInformation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 98</value>
-  </data>
-  <data name="gbSpreadsheetInformation.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="gbSpreadsheetInformation.Text" xml:space="preserve">
-    <value>Spreadsheet information</value>
-  </data>
-  <data name="&gt;&gt;gbSpreadsheetInformation.Name" xml:space="preserve">
-    <value>gbSpreadsheetInformation</value>
-  </data>
-  <data name="&gt;&gt;gbSpreadsheetInformation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbSpreadsheetInformation.Parent" xml:space="preserve">
-    <value>tbDataSourceSelect</value>
-  </data>
-  <data name="&gt;&gt;gbSpreadsheetInformation.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tbDataSourceSelect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tbDataSourceSelect.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="tbDataSourceSelect.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tbDataSourceSelect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 385</value>
-  </data>
-  <data name="tbDataSourceSelect.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tbDataSourceSelect.Text" xml:space="preserve">
-    <value>DataSourceSelect</value>
-  </data>
-  <data name="&gt;&gt;tbDataSourceSelect.Name" xml:space="preserve">
-    <value>tbDataSourceSelect</value>
-  </data>
-  <data name="&gt;&gt;tbDataSourceSelect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbDataSourceSelect.Parent" xml:space="preserve">
-    <value>wizardPages</value>
-  </data>
-  <data name="&gt;&gt;tbDataSourceSelect.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="tbFormTyp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -1284,8 +1809,44 @@ We recommend to look at the include sample files and to visit the documentation 
   <data name="&gt;&gt;tbFormTyp.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="ColField.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColTyp.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColValue.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColOption.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="dgvBulkPDF.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="dgvBulkPDF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 34</value>
+  </data>
+  <data name="dgvBulkPDF.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="dgvBulkPDF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>410, 345</value>
+  </data>
+  <data name="dgvBulkPDF.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;dgvBulkPDF.Name" xml:space="preserve">
+    <value>dgvBulkPDF</value>
+  </data>
+  <data name="&gt;&gt;dgvBulkPDF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvBulkPDF.Parent" xml:space="preserve">
+    <value>tpPDFSelect</value>
+  </data>
+  <data name="&gt;&gt;dgvBulkPDF.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="ColField.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1316,30 +1877,6 @@ We recommend to look at the include sample files and to visit the documentation 
   </metadata>
   <data name="ColOption.HeaderText" xml:space="preserve">
     <value>Edit</value>
-  </data>
-  <data name="dgvBulkPDF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 34</value>
-  </data>
-  <data name="dgvBulkPDF.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="dgvBulkPDF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>410, 345</value>
-  </data>
-  <data name="dgvBulkPDF.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;dgvBulkPDF.Name" xml:space="preserve">
-    <value>dgvBulkPDF</value>
-  </data>
-  <data name="&gt;&gt;dgvBulkPDF.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dgvBulkPDF.Parent" xml:space="preserve">
-    <value>tpPDFSelect</value>
-  </data>
-  <data name="&gt;&gt;dgvBulkPDF.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="tbPDF.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -1391,36 +1928,6 @@ We recommend to look at the include sample files and to visit the documentation 
   </data>
   <data name="&gt;&gt;bSelectPDF.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="tpPDFSelect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tpPDFSelect.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tpPDFSelect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 385</value>
-  </data>
-  <data name="tpPDFSelect.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tpPDFSelect.Text" xml:space="preserve">
-    <value>PDFSelect</value>
-  </data>
-  <data name="&gt;&gt;tpPDFSelect.Name" xml:space="preserve">
-    <value>tpPDFSelect</value>
-  </data>
-  <data name="&gt;&gt;tpPDFSelect.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tpPDFSelect.Parent" xml:space="preserve">
-    <value>wizardPages</value>
-  </data>
-  <data name="&gt;&gt;tpPDFSelect.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="gbOptions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="cbUnicode.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1482,33 +1989,6 @@ We recommend to look at the include sample files and to visit the documentation 
   <data name="&gt;&gt;cbFinalize.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="gbOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 125</value>
-  </data>
-  <data name="gbOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>413, 44</value>
-  </data>
-  <data name="gbOptions.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="gbOptions.Text" xml:space="preserve">
-    <value>Options</value>
-  </data>
-  <data name="&gt;&gt;gbOptions.Name" xml:space="preserve">
-    <value>gbOptions</value>
-  </data>
-  <data name="&gt;&gt;gbOptions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbOptions.Parent" xml:space="preserve">
-    <value>tpFinish</value>
-  </data>
-  <data name="&gt;&gt;gbOptions.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="gbOuput.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
   <data name="tbOutputDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
   </data>
@@ -1562,63 +2042,6 @@ We recommend to look at the include sample files and to visit the documentation 
   </data>
   <data name="&gt;&gt;bSelectOutputPath.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="gbOuput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 175</value>
-  </data>
-  <data name="gbOuput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>413, 50</value>
-  </data>
-  <data name="gbOuput.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="gbOuput.Text" xml:space="preserve">
-    <value>Output Path</value>
-  </data>
-  <data name="&gt;&gt;gbOuput.Name" xml:space="preserve">
-    <value>gbOuput</value>
-  </data>
-  <data name="&gt;&gt;gbOuput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbOuput.Parent" xml:space="preserve">
-    <value>tpFinish</value>
-  </data>
-  <data name="&gt;&gt;gbOuput.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="bSaveConfiguration.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="bSaveConfiguration.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bSaveConfiguration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 279</value>
-  </data>
-  <data name="bSaveConfiguration.Size" type="System.Drawing.Size, System.Drawing">
-    <value>413, 23</value>
-  </data>
-  <data name="bSaveConfiguration.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="bSaveConfiguration.Text" xml:space="preserve">
-    <value>Save Configuration</value>
-  </data>
-  <data name="&gt;&gt;bSaveConfiguration.Name" xml:space="preserve">
-    <value>bSaveConfiguration</value>
-  </data>
-  <data name="&gt;&gt;bSaveConfiguration.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bSaveConfiguration.Parent" xml:space="preserve">
-    <value>tpFinish</value>
-  </data>
-  <data name="&gt;&gt;bSaveConfiguration.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="gbFilename.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="cbRowNumberFilename.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
@@ -1910,78 +2333,6 @@ We recommend to look at the include sample files and to visit the documentation 
   </data>
   <data name="&gt;&gt;tbPrefix.ZOrder" xml:space="preserve">
     <value>9</value>
-  </data>
-  <data name="gbFilename.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 6</value>
-  </data>
-  <data name="gbFilename.Size" type="System.Drawing.Size, System.Drawing">
-    <value>413, 113</value>
-  </data>
-  <data name="gbFilename.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="gbFilename.Text" xml:space="preserve">
-    <value>Filename</value>
-  </data>
-  <data name="&gt;&gt;gbFilename.Name" xml:space="preserve">
-    <value>gbFilename</value>
-  </data>
-  <data name="&gt;&gt;gbFilename.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbFilename.Parent" xml:space="preserve">
-    <value>tpFinish</value>
-  </data>
-  <data name="&gt;&gt;gbFilename.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tpFinish.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tpFinish.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tpFinish.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 385</value>
-  </data>
-  <data name="tpFinish.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tpFinish.Text" xml:space="preserve">
-    <value>Finish</value>
-  </data>
-  <data name="&gt;&gt;tpFinish.Name" xml:space="preserve">
-    <value>tpFinish</value>
-  </data>
-  <data name="&gt;&gt;tpFinish.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tpFinish.Parent" xml:space="preserve">
-    <value>wizardPages</value>
-  </data>
-  <data name="&gt;&gt;tpFinish.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="wizardPages.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 0</value>
-  </data>
-  <data name="wizardPages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>437, 411</value>
-  </data>
-  <data name="wizardPages.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;wizardPages.Name" xml:space="preserve">
-    <value>wizardPages</value>
-  </data>
-  <data name="&gt;&gt;wizardPages.Type" xml:space="preserve">
-    <value>BulkPDF.WizardPages, BulkPDF, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;wizardPages.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;wizardPages.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -2356,9 +2707,6 @@ We recommend to look at the include sample files and to visit the documentation 
         AAAAAAAAAAAdHR1acnJyuXJycrlycnK5cnJyuXJycrlycnK5cnJyuXJycrlycnK5Ly8vcgAAAADABwAA
         wAMAAMABAADAAQAAwAEAAMABAADAAQAAwAEAAMABAAAAAQAAAAEAAAABAAAAAQAAwAEAAOABAADwAQAA
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>BulkPDF</value>

@@ -34,7 +34,6 @@
             this.bFinish = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bDonate = new System.Windows.Forms.Button();
-            this.seperatorLine1 = new BulkPDF.SeperatorLine();
             this.wizardPages = new BulkPDF.WizardPages();
             this.tpWelcome = new System.Windows.Forms.TabPage();
             this.llSupport = new System.Windows.Forms.LinkLabel();
@@ -135,12 +134,6 @@
             this.bDonate.Name = "bDonate";
             this.bDonate.UseVisualStyleBackColor = true;
             this.bDonate.Click += new System.EventHandler(this.bDonate_Click);
-            // 
-            // seperatorLine1
-            // 
-            resources.ApplyResources(this.seperatorLine1, "seperatorLine1");
-            this.seperatorLine1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.seperatorLine1.Name = "seperatorLine1";
             // 
             // wizardPages
             // 
@@ -533,7 +526,6 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bDonate);
-            this.Controls.Add(this.seperatorLine1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bFinish);
             this.Controls.Add(this.bBack);
@@ -572,7 +564,6 @@
         private System.Windows.Forms.Button bNext;
         private System.Windows.Forms.Button bBack;
         private System.Windows.Forms.TabPage tpPDFSelect;
-        private SeperatorLine seperatorLine1;
         private System.Windows.Forms.Button bFinish;
         private System.Windows.Forms.GroupBox gbSpreadsheetInformation;
         private System.Windows.Forms.Label lPossibleRowsValue;
