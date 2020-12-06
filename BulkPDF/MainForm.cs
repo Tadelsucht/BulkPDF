@@ -120,12 +120,12 @@ namespace BulkPDF
 
         private void bDonate_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://donate.bulkpdf.de/");
+            System.Diagnostics.Process.Start("https://bulkpdf.de/donate");
         }
 
         private void llDokumentation_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://documentation.bulkpdf.de/");
+            System.Diagnostics.Process.Start("https://bulkpdf.de/documentation");
         }
 
         private void llLicenses_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -136,7 +136,7 @@ namespace BulkPDF
 
         private void llBulkPDFde_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://bulkpdf.de/");
+            System.Diagnostics.Process.Start("https://bulkpdf.de/");
         }
 
         /**************************************************/
