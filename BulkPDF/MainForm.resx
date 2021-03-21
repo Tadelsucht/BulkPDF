@@ -126,7 +126,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bNext.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 326</value>
+    <value>472, 426</value>
   </data>
   <data name="bNext.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -157,7 +157,7 @@
     <value>NoControl</value>
   </data>
   <data name="bBack.Location" type="System.Drawing.Point, System.Drawing">
-    <value>266, 326</value>
+    <value>366, 426</value>
   </data>
   <data name="bBack.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -187,7 +187,7 @@
     <value>NoControl</value>
   </data>
   <data name="bFinish.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 326</value>
+    <value>472, 426</value>
   </data>
   <data name="bFinish.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -497,7 +497,7 @@
     <value>0, 0</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 316</value>
+    <value>151, 416</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -524,7 +524,7 @@
     <value>NoControl</value>
   </data>
   <data name="bDonate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 326</value>
+    <value>12, 426</value>
   </data>
   <data name="bDonate.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
@@ -554,7 +554,7 @@
     <value>NoControl</value>
   </data>
   <data name="seperatorLine1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-13, 314</value>
+    <value>-13, 414</value>
   </data>
   <data name="seperatorLine1.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>2147483647, 2</value>
@@ -572,7 +572,7 @@
     <value>seperatorLine1</value>
   </data>
   <data name="&gt;&gt;seperatorLine1.Type" xml:space="preserve">
-    <value>BulkPDF.SeperatorLine, BulkPDF, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>BulkPDF.SeperatorLine, BulkPDF, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;seperatorLine1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -593,7 +593,7 @@
     <value>NoControl</value>
   </data>
   <data name="llSupport.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 245</value>
+    <value>76, 367</value>
   </data>
   <data name="llSupport.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 13</value>
@@ -626,7 +626,7 @@
     <value>NoControl</value>
   </data>
   <data name="llBulkPDFde.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 245</value>
+    <value>6, 367</value>
   </data>
   <data name="llBulkPDFde.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 13</value>
@@ -659,7 +659,7 @@
     <value>NoControl</value>
   </data>
   <data name="llLicenses.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 245</value>
+    <value>7, 133</value>
   </data>
   <data name="llLicenses.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 13</value>
@@ -689,7 +689,7 @@
     <value>10, 43</value>
   </data>
   <data name="rtbWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>308, 203</value>
+    <value>419, 197</value>
   </data>
   <data name="rtbWelcome.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -772,16 +772,16 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>5</value>
   </data>
   <data name="bLoadConfiguration.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
+    <value>Left, Right</value>
   </data>
   <data name="bLoadConfiguration.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="bLoadConfiguration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 261</value>
+    <value>6, 282</value>
   </data>
   <data name="bLoadConfiguration.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 23</value>
+    <value>412, 24</value>
   </data>
   <data name="bLoadConfiguration.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -808,7 +808,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>NoControl</value>
   </data>
   <data name="llDokumentation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 245</value>
+    <value>126, 367</value>
   </data>
   <data name="llDokumentation.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 18</value>
@@ -838,7 +838,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tpWelcome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 290</value>
+    <value>429, 385</value>
   </data>
   <data name="tpWelcome.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -868,7 +868,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>6, 240</value>
   </data>
   <data name="rtbReselectWarning.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 44</value>
+    <value>412, 44</value>
   </data>
   <data name="rtbReselectWarning.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -898,7 +898,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>91, 88</value>
   </data>
   <data name="cbSpreadsheetTable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 21</value>
+    <value>313, 21</value>
   </data>
   <data name="cbSpreadsheetTable.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -955,7 +955,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>8, 19</value>
   </data>
   <data name="bSelectSpreadsheet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>299, 23</value>
+    <value>396, 23</value>
   </data>
   <data name="bSelectSpreadsheet.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -982,7 +982,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>8, 48</value>
   </data>
   <data name="tbSpreadsheet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>299, 20</value>
+    <value>396, 20</value>
   </data>
   <data name="tbSpreadsheet.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -1003,7 +1003,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>6, 6</value>
   </data>
   <data name="gbSpreadsheet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 124</value>
+    <value>412, 124</value>
   </data>
   <data name="gbSpreadsheet.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -1123,7 +1123,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>104, 70</value>
   </data>
   <data name="cbDataSourceColumnsExampleSpreadsheet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 21</value>
+    <value>302, 21</value>
   </data>
   <data name="cbDataSourceColumnsExampleSpreadsheet.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -1204,7 +1204,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>6, 136</value>
   </data>
   <data name="gbSpreadsheetInformation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 98</value>
+    <value>412, 98</value>
   </data>
   <data name="gbSpreadsheetInformation.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1234,7 +1234,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tbDataSourceSelect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 290</value>
+    <value>429, 385</value>
   </data>
   <data name="tbDataSourceSelect.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1261,7 +1261,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="tbFormTyp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>261, 8</value>
+    <value>358, 8</value>
   </data>
   <data name="tbFormTyp.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 20</value>
@@ -1318,13 +1318,13 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>Edit</value>
   </data>
   <data name="dgvBulkPDF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 32</value>
+    <value>8, 34</value>
   </data>
   <data name="dgvBulkPDF.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
   <data name="dgvBulkPDF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 252</value>
+    <value>410, 345</value>
   </data>
   <data name="dgvBulkPDF.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1348,7 +1348,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>99, 8</value>
   </data>
   <data name="tbPDF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 20</value>
+    <value>253, 20</value>
   </data>
   <data name="tbPDF.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1399,7 +1399,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tpPDFSelect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 290</value>
+    <value>429, 385</value>
   </data>
   <data name="tpPDFSelect.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1421,6 +1421,36 @@ We recommend to look at the include sample files and to visit the documentation 
   </data>
   <data name="gbOptions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <data name="cbUnicode.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cbUnicode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbUnicode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>223, 19</value>
+  </data>
+  <data name="cbUnicode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 17</value>
+  </data>
+  <data name="cbUnicode.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="cbUnicode.Text" xml:space="preserve">
+    <value>Unicode (Chinese, Cyrillic, Arabic)</value>
+  </data>
+  <data name="&gt;&gt;cbUnicode.Name" xml:space="preserve">
+    <value>cbUnicode</value>
+  </data>
+  <data name="&gt;&gt;cbUnicode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbUnicode.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;cbUnicode.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="cbFinalize.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1450,13 +1480,13 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>gbOptions</value>
   </data>
   <data name="&gt;&gt;cbFinalize.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="gbOptions.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 125</value>
   </data>
   <data name="gbOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 44</value>
+    <value>413, 44</value>
   </data>
   <data name="gbOptions.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -1486,7 +1516,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>6, 19</value>
   </data>
   <data name="tbOutputDir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 20</value>
+    <value>317, 20</value>
   </data>
   <data name="tbOutputDir.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -1510,7 +1540,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>NoControl</value>
   </data>
   <data name="bSelectOutputPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 17</value>
+    <value>329, 17</value>
   </data>
   <data name="bSelectOutputPath.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 23</value>
@@ -1537,7 +1567,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>8, 175</value>
   </data>
   <data name="gbOuput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 50</value>
+    <value>413, 50</value>
   </data>
   <data name="gbOuput.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -1564,10 +1594,10 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>NoControl</value>
   </data>
   <data name="bSaveConfiguration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 261</value>
+    <value>8, 546</value>
   </data>
   <data name="bSaveConfiguration.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 23</value>
+    <value>413, 23</value>
   </data>
   <data name="bSaveConfiguration.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1600,7 +1630,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>NoControl</value>
   </data>
   <data name="cbRowNumberFilename.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 52</value>
+    <value>250, 52</value>
   </data>
   <data name="cbRowNumberFilename.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 17</value>
@@ -1633,7 +1663,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>NoControl</value>
   </data>
   <data name="lPlus3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 52</value>
+    <value>231, 52</value>
   </data>
   <data name="lPlus3.Size" type="System.Drawing.Size, System.Drawing">
     <value>13, 13</value>
@@ -1663,7 +1693,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>62, 87</value>
   </data>
   <data name="tbExampleFilename.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 20</value>
+    <value>339, 20</value>
   </data>
   <data name="tbExampleFilename.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -1816,7 +1846,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>25, 49</value>
   </data>
   <data name="tbSuffix.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>200, 20</value>
   </data>
   <data name="tbSuffix.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -1840,7 +1870,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>152, 18</value>
   </data>
   <data name="cbDataSourceColumnsFilename.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 21</value>
+    <value>255, 21</value>
   </data>
   <data name="cbDataSourceColumnsFilename.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -1885,7 +1915,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>8, 6</value>
   </data>
   <data name="gbFilename.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 113</value>
+    <value>413, 113</value>
   </data>
   <data name="gbFilename.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -1912,7 +1942,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tpFinish.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 290</value>
+    <value>429, 385</value>
   </data>
   <data name="tpFinish.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1936,7 +1966,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>150, 0</value>
   </data>
   <data name="wizardPages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>337, 316</value>
+    <value>437, 411</value>
   </data>
   <data name="wizardPages.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1945,7 +1975,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>wizardPages</value>
   </data>
   <data name="&gt;&gt;wizardPages.Type" xml:space="preserve">
-    <value>BulkPDF.WizardPages, BulkPDF, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>BulkPDF.WizardPages, BulkPDF, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;wizardPages.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1960,7 +1990,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>484, 361</value>
+    <value>584, 461</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

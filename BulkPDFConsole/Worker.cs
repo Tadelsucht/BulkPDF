@@ -66,11 +66,20 @@ namespace BulkPDFConsole
                 //// Other
                 Console.WriteLine("Load general options");
                 bool finalize = Convert.ToBoolean(xmlOptions.Element("Finalize").Value);
+                bool unicode = false;
+                try
+                {
+                    unicode = Convert.ToBoolean(xmlOptions.Element("Unicode").Value);
+                }
+                catch
+                {
+                    // Ignore. Ugly but don't hurt anyone.
+                }
                 string outputDir = Environment.ExpandEnvironmentVariables(xmlOptions.Element("OutputDir").Value);
 
 
                 Console.WriteLine("--- Start processing ---");
-                PDFFiller.CreateFiles(pdf, finalize, dataSource, pdfFields, outputDir + @"\", ConcatFilename, WriteLinePercent);
+                PDFFiller.CreateFiles(pdf, finalize, unicode, dataSource, pdfFields, outputDir + @"\", ConcatFilename, WriteLinePercent);
                 Console.WriteLine("!!! Finished !!!");
             }
             catch (Exception e)

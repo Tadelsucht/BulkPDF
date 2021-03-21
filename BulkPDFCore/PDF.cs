@@ -78,7 +78,7 @@ namespace BulkPDF
                 pdfReader.Close();
         }
 
-        public void SaveFilledPDF(string filePath, bool finalize)
+        public void SaveFilledPDF(string filePath, bool finalize, bool unicode)
         {
             var copiedPdfReader = new PdfReader(pdfReader);
             var pdfStamperMemoryStream = new MemoryStream();
@@ -112,8 +112,17 @@ namespace BulkPDF
                         }
                     }
 
+                    // Unicode
+                    if (unicode)
+                    {
+                        BaseFont bf = BaseFont.CreateFont(Path.Combine(Directory.GetCurrentDirectory(), "unifont.ttf"), BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+                        pdfStamper.AcroFields.AddSubstitutionFont(bf);
+                        pdfStamper.AcroFields.SetFieldProperty(field.Name, "textfont", bf, null);
+                        pdfStamper.AcroFields.RegenerateField(field.Name);
+                    }
+
+                    // Write text
                     bool test = pdfStamper.AcroFields.SetField(field.Name, value);
-                    Console.WriteLine(test); 
                 }
 
                 // Read Only

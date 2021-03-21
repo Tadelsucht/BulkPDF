@@ -35,9 +35,12 @@
             this.gbBulkPDF = new System.Windows.Forms.GroupBox();
             this.gbSpreadsheetLight = new System.Windows.Forms.GroupBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.gbiTextSharp.SuspendLayout();
             this.gbBulkPDF.SuspendLayout();
             this.gbSpreadsheetLight.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // rtbLicenses
@@ -97,11 +100,31 @@
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.richTextBox2);
+            this.groupBox1.Location = new System.Drawing.Point(12, 355);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(460, 90);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "GNU Unifont";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(6, 20);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.ReadOnly = true;
+            this.richTextBox2.Size = new System.Drawing.Size(448, 64);
+            this.richTextBox2.TabIndex = 0;
+            this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
+            // 
             // Licenses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 361);
+            this.ClientSize = new System.Drawing.Size(484, 452);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbSpreadsheetLight);
             this.Controls.Add(this.gbBulkPDF);
             this.Controls.Add(this.gbiTextSharp);
@@ -114,6 +137,7 @@
             this.gbiTextSharp.ResumeLayout(false);
             this.gbBulkPDF.ResumeLayout(false);
             this.gbSpreadsheetLight.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -126,5 +150,7 @@
         private System.Windows.Forms.GroupBox gbBulkPDF;
         private System.Windows.Forms.GroupBox gbSpreadsheetLight;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }

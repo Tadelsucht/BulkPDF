@@ -12,7 +12,7 @@ namespace BulkPDF
 
     public static class PDFFiller
     {
-        public static void CreateFiles(PDF pdf, bool finalize, IDataSource dataSource, Dictionary<string, PDFField> pdfFields, string outputDir
+        public static void CreateFiles(PDF pdf, bool finalize, bool unicode, IDataSource dataSource, Dictionary<string, PDFField> pdfFields, string outputDir
             , DelGetFilename GetFilename, DelSetPercent setPercent = null, DelIsAborted isAborted = null)
         {
             pdf.ResetFieldValue();
@@ -30,7 +30,7 @@ namespace BulkPDF
                 }
 
                 // PDF
-                pdf.SaveFilledPDF(outputDir + GetFilename(dataSourceRow), finalize);
+                pdf.SaveFilledPDF(outputDir + GetFilename(dataSourceRow), finalize, unicode);
                 pdf.ResetFieldValue();
                 dataSource.NextRow();
 

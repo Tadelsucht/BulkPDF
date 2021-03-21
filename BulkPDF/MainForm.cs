@@ -23,7 +23,7 @@ namespace BulkPDF
         ProgressForm progressForm;
         int tempSelectedIndex;
         bool finalize = false;
-
+        bool unicode = false;
 
         public MainForm()
         {
@@ -159,6 +159,7 @@ namespace BulkPDF
                             progressForm = new ProgressForm();
                             progressForm.Show();
                             finalize = cbFinalize.Checked;
+                            unicode = cbUnicode.Checked;
 
                             BackgroundWorker backGroundWorker = new BackgroundWorker();
                             backGroundWorker.DoWork += backGroundWorker_DoWork;
@@ -187,7 +188,7 @@ namespace BulkPDF
         {
             try
             {
-                PDFFiller.CreateFiles(pdf, finalize, dataSource, pdfFields, tbOutputDir.Text + @"\", ConcatFilename, progressForm.SetPercent, progressForm.GetIsAborted);
+                PDFFiller.CreateFiles(pdf, finalize, unicode, dataSource, pdfFields, tbOutputDir.Text + @"\", ConcatFilename, progressForm.SetPercent, progressForm.GetIsAborted);
             }
             catch (Exception ex)
             {
@@ -402,6 +403,7 @@ namespace BulkPDF
                 xmlWriter.WriteElementString("RowNumber", cbRowNumberFilename.Checked.ToString());
                 xmlWriter.WriteEndElement(); // </Filename>
                 xmlWriter.WriteElementString("Finalize", cbFinalize.Checked.ToString());
+                xmlWriter.WriteElementString("Unicode", cbUnicode.Checked.ToString());
                 xmlWriter.WriteElementString("OutputDir", tbOutputDir.Text);
                 xmlWriter.WriteEndElement(); // </Options>
 
@@ -494,6 +496,14 @@ namespace BulkPDF
 
                     //// Other
                     cbFinalize.Checked = Convert.ToBoolean(xmlOptions.Element("Finalize").Value);
+                    try
+                    {
+                        cbUnicode.Checked = Convert.ToBoolean(xmlOptions.Element("Unicode").Value);
+                    }
+                    catch
+                    {
+                        // Ignore. Ugly but don't hurt anyone.
+                    }
                     tbOutputDir.Text = Environment.ExpandEnvironmentVariables(xmlOptions.Element("OutputDir").Value);
 
                     wizardPages.SelectedIndex = wizardPages.TabPages.Count - 1;
