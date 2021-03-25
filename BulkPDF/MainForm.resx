@@ -1594,7 +1594,7 @@ We recommend to look at the include sample files and to visit the documentation 
     <value>NoControl</value>
   </data>
   <data name="bSaveConfiguration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 546</value>
+    <value>8, 279</value>
   </data>
   <data name="bSaveConfiguration.Size" type="System.Drawing.Size, System.Drawing">
     <value>413, 23</value>
@@ -2356,6 +2356,9 @@ We recommend to look at the include sample files and to visit the documentation 
         AAAAAAAAAAAdHR1acnJyuXJycrlycnK5cnJyuXJycrlycnK5cnJyuXJycrlycnK5Ly8vcgAAAADABwAA
         wAMAAMABAADAAQAAwAEAAMABAADAAQAAwAEAAMABAAAAAQAAAAEAAAABAAAAAQAAwAEAAOABAADwAQAA
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>BulkPDF</value>
