@@ -34,6 +34,7 @@
             this.bFinish = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bDonate = new System.Windows.Forms.Button();
+            this.seperatorLine1 = new BulkPDF.SeperatorLine();
             this.wizardPages = new BulkPDF.WizardPages();
             this.tpWelcome = new System.Windows.Forms.TabPage();
             this.llSupport = new System.Windows.Forms.LinkLabel();
@@ -134,6 +135,12 @@
             this.bDonate.Name = "bDonate";
             this.bDonate.UseVisualStyleBackColor = true;
             this.bDonate.Click += new System.EventHandler(this.bDonate_Click);
+            // 
+            // seperatorLine1
+            // 
+            resources.ApplyResources(this.seperatorLine1, "seperatorLine1");
+            this.seperatorLine1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.seperatorLine1.Name = "seperatorLine1";
             // 
             // wizardPages
             // 
@@ -526,6 +533,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.bDonate);
+            this.Controls.Add(this.seperatorLine1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bFinish);
             this.Controls.Add(this.bBack);
@@ -564,7 +572,10 @@
         private System.Windows.Forms.Button bNext;
         private System.Windows.Forms.Button bBack;
         private System.Windows.Forms.TabPage tpPDFSelect;
+        private SeperatorLine seperatorLine1;
+        private System.Windows.Forms.TabPage tpWelcome;
         private System.Windows.Forms.Button bFinish;
+        private System.Windows.Forms.Button bLoadConfiguration;
         private System.Windows.Forms.GroupBox gbSpreadsheetInformation;
         private System.Windows.Forms.Label lPossibleRowsValue;
         private System.Windows.Forms.Label lPossibleRows;
@@ -595,26 +606,24 @@
         private System.Windows.Forms.GroupBox gbSpreadsheet;
         private System.Windows.Forms.Label lTable;
         private System.Windows.Forms.ComboBox cbSpreadsheetTable;
+        private System.Windows.Forms.Label lBulkPDF;
+        private System.Windows.Forms.Label lVersion;
+        private System.Windows.Forms.LinkLabel llDokumentation;
         private System.Windows.Forms.Button bDonate;
+        private System.Windows.Forms.LinkLabel llLicenses;
         private System.Windows.Forms.Label lPossibleColumnsValue;
         private System.Windows.Forms.Label lPossibleColumns;
+        private System.Windows.Forms.RichTextBox rtbWelcome;
+        private System.Windows.Forms.LinkLabel llBulkPDFde;
         private System.Windows.Forms.GroupBox gbOptions;
         private System.Windows.Forms.CheckBox cbFinalize;
         private System.Windows.Forms.TextBox tbFormTyp;
         private System.Windows.Forms.RichTextBox rtbReselectWarning;
+        private System.Windows.Forms.LinkLabel llSupport;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColField;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColTyp;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColValue;
         private System.Windows.Forms.DataGridViewButtonColumn ColOption;
         private System.Windows.Forms.CheckBox cbUnicode;
-        private System.Windows.Forms.TabPage tpWelcome;
-        private System.Windows.Forms.LinkLabel llSupport;
-        private System.Windows.Forms.LinkLabel llBulkPDFde;
-        private System.Windows.Forms.LinkLabel llLicenses;
-        private System.Windows.Forms.RichTextBox rtbWelcome;
-        private System.Windows.Forms.Label lVersion;
-        private System.Windows.Forms.Label lBulkPDF;
-        private System.Windows.Forms.Button bLoadConfiguration;
-        private System.Windows.Forms.LinkLabel llDokumentation;
     }
 }
