@@ -112,31 +112,21 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bNext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
   <data name="bNext.Text" xml:space="preserve">
     <value>Weiter &gt;</value>
-  </data>
-  <data name="bBack.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
   </data>
   <data name="bBack.Text" xml:space="preserve">
     <value>&lt; Zurück</value>
   </data>
-  <data name="bFinish.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
   <data name="bFinish.Text" xml:space="preserve">
     <value>Fertig stellen</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA+gAAAPoCAYAAABNo9TkAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAEU
@@ -414,28 +404,16 @@
         ZuZT+BoAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bDonate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
   <data name="bDonate.Text" xml:space="preserve">
     <value>Spenden</value>
   </data>
-  <data name="wizardPages.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
   <data name="llLicenses.Location" type="System.Drawing.Point, System.Drawing">
     <value>235, 245</value>
-  </data>
-  <data name="rtbWelcome.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="rtbWelcome.Text" xml:space="preserve">
     <value>BulkPDF ist ein kostenfreie und leicht bedienbare Open Source Software, welche erlaubt ein vorhandenes PDF Formular beliebig oft mit verschiedenen Werten automatisch ausfüllen zu lassen. Alles was dazu benötigt wird ist eine Tabellenkalkulationsdatei (Microsoft Excel 2007/2010/2013, LibreOffice oder OpenOffice Calc) mit den gewünschten Werten.
 
 Wir empfehlen bei der ersten Benutzung der Anwendung sich die mitgelieferten Beispieldateien anzugucken sowie die Dokumentationsseite aufzusuchen.</value>
-  </data>
-  <data name="bLoadConfiguration.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
   </data>
   <data name="bLoadConfiguration.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 261</value>
@@ -446,10 +424,7 @@ Wir empfehlen bei der ersten Benutzung der Anwendung sich die mitgelieferten Bei
   <data name="bLoadConfiguration.Text" xml:space="preserve">
     <value>Konfiguration laden</value>
   </data>
-  <data name="llDokumentation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="llDokumentation.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -468,6 +443,7 @@ Wir empfehlen bei der ersten Benutzung der Anwendung sich die mitgelieferten Bei
   <data name="gbSpreadsheet.Text" xml:space="preserve">
     <value>Tabellenkalkulationsdatei</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="cbSpreadsheetTable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -540,9 +516,6 @@ Wir empfehlen bei der ersten Benutzung der Anwendung sich die mitgelieferten Bei
   <data name="lPossibleRows.Text" xml:space="preserve">
     <value>Anzahl ermittelter Zeilen:</value>
   </data>
-  <data name="tbFormTyp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>261, 8</value>
-  </data>
   <data name="ColField.HeaderText" xml:space="preserve">
     <value>Feld</value>
   </data>
@@ -567,17 +540,17 @@ Wir empfehlen bei der ersten Benutzung der Anwendung sich die mitgelieferten Bei
   <data name="bSelectPDF.Text" xml:space="preserve">
     <value>PDF-Datei auswählen</value>
   </data>
-  <data name="bShortcutCreator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="bShortcutCreator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 23</value>
-  </data>
-  <data name="bShortcutCreator.Text" xml:space="preserve">
-    <value>Schnellverknüpfung</value>
-  </data>
   <data name="gbOptions.Text" xml:space="preserve">
     <value>Optionen</value>
+  </data>
+  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 17</value>
+  </data>
+  <data name="checkBox1.Text" xml:space="preserve">
+    <value>Eigene Schriftart</value>
+  </data>
+  <data name="bSelectOwnFont.Text" xml:space="preserve">
+    <value>Schriftart auswählen...</value>
   </data>
   <data name="cbFinalize.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 17</value>
@@ -587,9 +560,6 @@ Wir empfehlen bei der ersten Benutzung der Anwendung sich die mitgelieferten Bei
   </data>
   <data name="gbOuput.Text" xml:space="preserve">
     <value>Ausgabeverzeichnis</value>
-  </data>
-  <data name="tbOutputDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
   </data>
   <data name="tbOutputDir.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 20</value>
