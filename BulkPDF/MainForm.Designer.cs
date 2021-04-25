@@ -70,8 +70,9 @@
             this.bSelectPDF = new System.Windows.Forms.Button();
             this.tpFinish = new System.Windows.Forms.TabPage();
             this.gbOptions = new System.Windows.Forms.GroupBox();
+            this.tbCustomFontPath = new System.Windows.Forms.TextBox();
             this.bSelectOwnFont = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.cbCustomFont = new System.Windows.Forms.CheckBox();
             this.cbUnicode = new System.Windows.Forms.CheckBox();
             this.cbFinalize = new System.Windows.Forms.CheckBox();
             this.gbOuput = new System.Windows.Forms.GroupBox();
@@ -409,24 +410,32 @@
             // gbOptions
             // 
             resources.ApplyResources(this.gbOptions, "gbOptions");
+            this.gbOptions.Controls.Add(this.tbCustomFontPath);
             this.gbOptions.Controls.Add(this.bSelectOwnFont);
-            this.gbOptions.Controls.Add(this.checkBox1);
+            this.gbOptions.Controls.Add(this.cbCustomFont);
             this.gbOptions.Controls.Add(this.cbUnicode);
             this.gbOptions.Controls.Add(this.cbFinalize);
             this.gbOptions.Name = "gbOptions";
             this.gbOptions.TabStop = false;
+            // 
+            // tbCustomFontPath
+            // 
+            resources.ApplyResources(this.tbCustomFontPath, "tbCustomFontPath");
+            this.tbCustomFontPath.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tbCustomFontPath.Name = "tbCustomFontPath";
             // 
             // bSelectOwnFont
             // 
             resources.ApplyResources(this.bSelectOwnFont, "bSelectOwnFont");
             this.bSelectOwnFont.Name = "bSelectOwnFont";
             this.bSelectOwnFont.UseVisualStyleBackColor = true;
+            this.bSelectOwnFont.Click += new System.EventHandler(this.bSelectOwnFont_Click);
             // 
-            // checkBox1
+            // cbCustomFont
             // 
-            resources.ApplyResources(this.checkBox1, "checkBox1");
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.cbCustomFont, "cbCustomFont");
+            this.cbCustomFont.Name = "cbCustomFont";
+            this.cbCustomFont.UseVisualStyleBackColor = true;
             // 
             // cbUnicode
             // 
@@ -642,6 +651,7 @@
         private System.Windows.Forms.DataGridViewButtonColumn ColOption;
         private System.Windows.Forms.CheckBox cbUnicode;
         private System.Windows.Forms.Button bSelectOwnFont;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cbCustomFont;
+        private System.Windows.Forms.TextBox tbCustomFontPath;
     }
 }
