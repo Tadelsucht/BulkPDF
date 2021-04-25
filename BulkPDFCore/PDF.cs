@@ -78,7 +78,7 @@ namespace BulkPDF
                 pdfReader.Close();
         }
 
-        public void SaveFilledPDF(string filePath, bool finalize, bool unicode)
+        public void SaveFilledPDF(string filePath, bool finalize, bool unicode, bool customFont, string customFontPath)
         {
             var copiedPdfReader = new PdfReader(pdfReader);
             var pdfStamperMemoryStream = new MemoryStream();
@@ -112,10 +112,11 @@ namespace BulkPDF
                         }
                     }
 
-                    // Unicode
-                    if (unicode)
+                    // Different font
+                    var fontPath = (customFont) ? customFontPath : Path.Combine(Directory.GetCurrentDirectory(), "unifont.ttf");
+                    if(unicode || customFont)
                     {
-                        BaseFont bf = BaseFont.CreateFont(Path.Combine(Directory.GetCurrentDirectory(), "unifont.ttf"), BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+                        BaseFont bf = BaseFont.CreateFont(fontPath, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
                         pdfStamper.AcroFields.AddSubstitutionFont(bf);
                         pdfStamper.AcroFields.SetFieldProperty(field.Name, "textfont", bf, null);
                         pdfStamper.AcroFields.RegenerateField(field.Name);

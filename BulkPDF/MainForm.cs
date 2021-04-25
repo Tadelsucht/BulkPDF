@@ -24,6 +24,7 @@ namespace BulkPDF
         int tempSelectedIndex;
         bool finalize = false;
         bool unicode = false;
+        bool customFont = false;
 
         public MainForm()
         {
@@ -160,6 +161,7 @@ namespace BulkPDF
                             progressForm.Show();
                             finalize = cbFinalize.Checked;
                             unicode = cbUnicode.Checked;
+                            customFont = cbCustomFont.Checked;
 
                             BackgroundWorker backGroundWorker = new BackgroundWorker();
                             backGroundWorker.DoWork += backGroundWorker_DoWork;
@@ -188,7 +190,7 @@ namespace BulkPDF
         {
             try
             {
-                PDFFiller.CreateFiles(pdf, finalize, unicode, dataSource, pdfFields, tbOutputDir.Text + @"\", ConcatFilename, progressForm.SetPercent, progressForm.GetIsAborted);
+                PDFFiller.CreateFiles(pdf, finalize, unicode, customFont, tbCustomFontPath.Text, dataSource, pdfFields, tbOutputDir.Text + @"\", ConcatFilename, progressForm.SetPercent, progressForm.GetIsAborted);
             }
             catch (Exception ex)
             {
@@ -404,6 +406,8 @@ namespace BulkPDF
                 xmlWriter.WriteEndElement(); // </Filename>
                 xmlWriter.WriteElementString("Finalize", cbFinalize.Checked.ToString());
                 xmlWriter.WriteElementString("Unicode", cbUnicode.Checked.ToString());
+                xmlWriter.WriteElementString("CustomFont", cbCustomFont.Checked.ToString());
+                xmlWriter.WriteElementString("CustomFontPath", tbCustomFontPath.Text);
                 xmlWriter.WriteElementString("OutputDir", tbOutputDir.Text);
                 xmlWriter.WriteEndElement(); // </Options>
 
@@ -499,6 +503,15 @@ namespace BulkPDF
                     try
                     {
                         cbUnicode.Checked = Convert.ToBoolean(xmlOptions.Element("Unicode").Value);
+                    }
+                    catch
+                    {
+                        // Ignore. Ugly but don't hurt anyone.
+                    }
+                    try
+                    {
+                        cbCustomFont.Checked = Convert.ToBoolean(xmlOptions.Element("CustomFont").Value);
+                        tbCustomFontPath.Text = Environment.ExpandEnvironmentVariables(xmlOptions.Element("CustomFontPath").Value);
                     }
                     catch
                     {
@@ -606,7 +619,7 @@ namespace BulkPDF
             // Select File
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.InitialDirectory = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            openFileDialog.Filter = "Spreadsheet|*.xlsx;*.xlsm;*.odc";
+            openFileDialog.Filter = "Spreadsheet|*.xlsx;*.xlsm;";
             openFileDialog.FilterIndex = 1;
             openFileDialog.Multiselect = false;
             if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -674,6 +687,20 @@ namespace BulkPDF
         {
             var donateForm = new DonateForm();
             donateForm.ShowDialog();
+        }
+
+        private void bSelectOwnFont_Click(object sender, EventArgs e)
+        {
+            // Select File
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.InitialDirectory = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            openFileDialog.Filter = "Font|*.ttf;";
+            openFileDialog.FilterIndex = 1;
+            openFileDialog.Multiselect = false;
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                tbCustomFontPath.Text = openFileDialog.FileName;
+            }
         }
     }
 }

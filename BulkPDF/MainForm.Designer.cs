@@ -70,6 +70,9 @@
             this.bSelectPDF = new System.Windows.Forms.Button();
             this.tpFinish = new System.Windows.Forms.TabPage();
             this.gbOptions = new System.Windows.Forms.GroupBox();
+            this.tbCustomFontPath = new System.Windows.Forms.TextBox();
+            this.bSelectOwnFont = new System.Windows.Forms.Button();
+            this.cbCustomFont = new System.Windows.Forms.CheckBox();
             this.cbUnicode = new System.Windows.Forms.CheckBox();
             this.cbFinalize = new System.Windows.Forms.CheckBox();
             this.gbOuput = new System.Windows.Forms.GroupBox();
@@ -156,6 +159,7 @@
             // 
             // tpWelcome
             // 
+            resources.ApplyResources(this.tpWelcome, "tpWelcome");
             this.tpWelcome.BackColor = System.Drawing.SystemColors.Control;
             this.tpWelcome.Controls.Add(this.llSupport);
             this.tpWelcome.Controls.Add(this.llBulkPDFde);
@@ -165,7 +169,6 @@
             this.tpWelcome.Controls.Add(this.lBulkPDF);
             this.tpWelcome.Controls.Add(this.bLoadConfiguration);
             this.tpWelcome.Controls.Add(this.llDokumentation);
-            resources.ApplyResources(this.tpWelcome, "tpWelcome");
             this.tpWelcome.Name = "tpWelcome";
             // 
             // llSupport
@@ -225,11 +228,11 @@
             // 
             // tbDataSourceSelect
             // 
+            resources.ApplyResources(this.tbDataSourceSelect, "tbDataSourceSelect");
             this.tbDataSourceSelect.BackColor = System.Drawing.SystemColors.Control;
             this.tbDataSourceSelect.Controls.Add(this.rtbReselectWarning);
             this.tbDataSourceSelect.Controls.Add(this.gbSpreadsheet);
             this.tbDataSourceSelect.Controls.Add(this.gbSpreadsheetInformation);
-            resources.ApplyResources(this.tbDataSourceSelect, "tbDataSourceSelect");
             this.tbDataSourceSelect.Name = "tbDataSourceSelect";
             // 
             // rtbReselectWarning
@@ -321,12 +324,12 @@
             // 
             // tpPDFSelect
             // 
+            resources.ApplyResources(this.tpPDFSelect, "tpPDFSelect");
             this.tpPDFSelect.BackColor = System.Drawing.SystemColors.Control;
             this.tpPDFSelect.Controls.Add(this.tbFormTyp);
             this.tpPDFSelect.Controls.Add(this.dgvBulkPDF);
             this.tpPDFSelect.Controls.Add(this.tbPDF);
             this.tpPDFSelect.Controls.Add(this.bSelectPDF);
-            resources.ApplyResources(this.tpPDFSelect, "tpPDFSelect");
             this.tpPDFSelect.Name = "tpPDFSelect";
             // 
             // tbFormTyp
@@ -337,9 +340,9 @@
             // 
             // dgvBulkPDF
             // 
+            resources.ApplyResources(this.dgvBulkPDF, "dgvBulkPDF");
             this.dgvBulkPDF.AllowUserToAddRows = false;
             this.dgvBulkPDF.AllowUserToDeleteRows = false;
-            resources.ApplyResources(this.dgvBulkPDF, "dgvBulkPDF");
             this.dgvBulkPDF.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBulkPDF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvBulkPDF.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -396,21 +399,43 @@
             // 
             // tpFinish
             // 
+            resources.ApplyResources(this.tpFinish, "tpFinish");
             this.tpFinish.BackColor = System.Drawing.SystemColors.Control;
             this.tpFinish.Controls.Add(this.gbOptions);
             this.tpFinish.Controls.Add(this.gbOuput);
             this.tpFinish.Controls.Add(this.bSaveConfiguration);
             this.tpFinish.Controls.Add(this.gbFilename);
-            resources.ApplyResources(this.tpFinish, "tpFinish");
             this.tpFinish.Name = "tpFinish";
             // 
             // gbOptions
             // 
             resources.ApplyResources(this.gbOptions, "gbOptions");
+            this.gbOptions.Controls.Add(this.tbCustomFontPath);
+            this.gbOptions.Controls.Add(this.bSelectOwnFont);
+            this.gbOptions.Controls.Add(this.cbCustomFont);
             this.gbOptions.Controls.Add(this.cbUnicode);
             this.gbOptions.Controls.Add(this.cbFinalize);
             this.gbOptions.Name = "gbOptions";
             this.gbOptions.TabStop = false;
+            // 
+            // tbCustomFontPath
+            // 
+            resources.ApplyResources(this.tbCustomFontPath, "tbCustomFontPath");
+            this.tbCustomFontPath.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tbCustomFontPath.Name = "tbCustomFontPath";
+            // 
+            // bSelectOwnFont
+            // 
+            resources.ApplyResources(this.bSelectOwnFont, "bSelectOwnFont");
+            this.bSelectOwnFont.Name = "bSelectOwnFont";
+            this.bSelectOwnFont.UseVisualStyleBackColor = true;
+            this.bSelectOwnFont.Click += new System.EventHandler(this.bSelectOwnFont_Click);
+            // 
+            // cbCustomFont
+            // 
+            resources.ApplyResources(this.cbCustomFont, "cbCustomFont");
+            this.cbCustomFont.Name = "cbCustomFont";
+            this.cbCustomFont.UseVisualStyleBackColor = true;
             // 
             // cbUnicode
             // 
@@ -625,5 +650,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColValue;
         private System.Windows.Forms.DataGridViewButtonColumn ColOption;
         private System.Windows.Forms.CheckBox cbUnicode;
+        private System.Windows.Forms.Button bSelectOwnFont;
+        private System.Windows.Forms.CheckBox cbCustomFont;
+        private System.Windows.Forms.TextBox tbCustomFontPath;
     }
 }

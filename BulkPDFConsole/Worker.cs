@@ -75,11 +75,22 @@ namespace BulkPDFConsole
                 {
                     // Ignore. Ugly but don't hurt anyone.
                 }
+                bool customFont = false;
+                string customFontPath = "";
+                try
+                {
+                    customFont = Convert.ToBoolean(xmlOptions.Element("CustomFont").Value);
+                    customFontPath = Environment.ExpandEnvironmentVariables(xmlOptions.Element("CustomFontPath").Value);
+                }
+                catch
+                {
+                    // Ignore. Ugly but don't hurt anyone.
+                }
                 string outputDir = Environment.ExpandEnvironmentVariables(xmlOptions.Element("OutputDir").Value);
 
 
                 Console.WriteLine("--- Start processing ---");
-                PDFFiller.CreateFiles(pdf, finalize, unicode, dataSource, pdfFields, outputDir + @"\", ConcatFilename, WriteLinePercent);
+                PDFFiller.CreateFiles(pdf, finalize, unicode, customFont, customFontPath, dataSource, pdfFields, outputDir + @"\", ConcatFilename, WriteLinePercent);
                 Console.WriteLine("!!! Finished !!!");
             }
             catch (Exception e)
