@@ -606,7 +606,7 @@ namespace BulkPDF
             // Select File
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.InitialDirectory = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            openFileDialog.Filter = "Spreadsheet|*.xlsx;*.xlsm;*.odc";
+            openFileDialog.Filter = "Spreadsheet|*.xlsx;*.xlsm;";
             openFileDialog.FilterIndex = 1;
             openFileDialog.Multiselect = false;
             if (openFileDialog.ShowDialog() == DialogResult.OK)
