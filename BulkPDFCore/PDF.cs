@@ -1,8 +1,12 @@
-using iTextSharp.text.exceptions;
-using iTextSharp.text.pdf;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.IO;
+using System.Collections;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using iTextSharp.text.exceptions;
 using System.Text.RegularExpressions;
 
 namespace BulkPDF
@@ -110,7 +114,7 @@ namespace BulkPDF
 
                     // Different font
                     var fontPath = (customFont) ? customFontPath : Path.Combine(Directory.GetCurrentDirectory(), "unifont.ttf");
-                    if (unicode || customFont)
+                    if(unicode || customFont)
                     {
                         BaseFont bf = BaseFont.CreateFont(fontPath, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
                         pdfStamper.AcroFields.AddSubstitutionFont(bf);
