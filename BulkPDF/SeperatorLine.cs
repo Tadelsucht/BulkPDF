@@ -1,14 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 namespace BulkPDF
 {
-    class SeperatorLine : Label
+    internal class SeperatorLine : Label
     {
+        public SeperatorLine()
+        {
+            this.AutoSize = false;
+            this.Height = 2;
+            this.BorderStyle = BorderStyle.Fixed3D;
+        }
+
         public override bool AutoSize
         {
             get
@@ -39,13 +42,6 @@ namespace BulkPDF
             {
                 return "";
             }
-        }
-
-        public SeperatorLine()
-        {
-            this.AutoSize = false;
-            this.Height = 2;
-            this.BorderStyle = BorderStyle.Fixed3D;
         }
     }
 }

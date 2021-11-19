@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace BulkPDF
 {
@@ -10,14 +6,19 @@ namespace BulkPDF
     {
         // ATTRIBUTES
         List<string> Columns { get; }
-        int PossibleRows { get; }
+
         string Parameter { get; }
+        int PossibleRows { get; }
+
+        void Close();
+
+        string GetField(int columnIndex);
+
+        bool NextRow();
 
         // METHODS
         void Open(string parameter);
-        void Close();
-        bool NextRow();
+
         void ResetRowCounter();
-        string GetField(int columnIndex);
     }
 }

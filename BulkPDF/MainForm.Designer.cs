@@ -33,7 +33,6 @@
             this.bBack = new System.Windows.Forms.Button();
             this.bFinish = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bDonate = new System.Windows.Forms.Button();
             this.seperatorLine1 = new BulkPDF.SeperatorLine();
             this.wizardPages = new BulkPDF.WizardPages();
             this.tpWelcome = new System.Windows.Forms.TabPage();
@@ -131,13 +130,6 @@
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
-            // 
-            // bDonate
-            // 
-            resources.ApplyResources(this.bDonate, "bDonate");
-            this.bDonate.Name = "bDonate";
-            this.bDonate.UseVisualStyleBackColor = true;
-            this.bDonate.Click += new System.EventHandler(this.bDonate_Click);
             // 
             // seperatorLine1
             // 
@@ -557,7 +549,6 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.bDonate);
             this.Controls.Add(this.seperatorLine1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bFinish);
@@ -634,7 +625,6 @@
         private System.Windows.Forms.Label lBulkPDF;
         private System.Windows.Forms.Label lVersion;
         private System.Windows.Forms.LinkLabel llDokumentation;
-        private System.Windows.Forms.Button bDonate;
         private System.Windows.Forms.LinkLabel llLicenses;
         private System.Windows.Forms.Label lPossibleColumnsValue;
         private System.Windows.Forms.Label lPossibleColumns;

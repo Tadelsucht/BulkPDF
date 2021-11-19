@@ -1,19 +1,23 @@
+using iTextSharp.text.exceptions;
+using iTextSharp.text.pdf;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.IO;
-using System.Collections;
-using iTextSharp.text;
-using iTextSharp.text.pdf;
-using iTextSharp.text.exceptions;
 using System.Text.RegularExpressions;
 
 namespace BulkPDF
 {
     public class PDF
     {
-        enum AcroFieldsTypes
+        private bool isDynamicXFA = false;
+
+        private bool isXFA = false;
+
+        private PdfReader pdfReader;
+
+        private List<FieldWriteData> writerFieldList = new List<FieldWriteData>();
+
+        private enum AcroFieldsTypes
         {
             BUTTON = 1,
             CHECK_BOX = 2,
@@ -22,20 +26,30 @@ namespace BulkPDF
             LIST_BOX = 5,
             COMBO_BOX = 6
         }
-        PdfReader pdfReader;
-        List<FieldWriteData> writerFieldList = new List<FieldWriteData>();
+
         public bool IsXFA
         {
             get { return isXFA; }
         }
-        bool isXFA = false;
-        bool isDynamicXFA = false;
 
-        struct FieldWriteData
+        public void Close()
         {
-            public string Name;
-            public string Value;
-            public bool MakeReadOnly;
+            if (pdfReader != null)
+                pdfReader.Close();
+        }
+
+        public List<PDFField> ListFields()
+        {
+            XfaForm xfa = new XfaForm(pdfReader);
+            if (isDynamicXFA)
+            {
+                var acroFields = pdfReader.AcroFields;
+                return ListDynamicXFAFields(acroFields.Xfa.DatasetsNode.FirstChild);
+            }
+            else
+            {
+                return ListGenericFields();
+            }
         }
 
         public void Open(String filePath)
@@ -72,10 +86,9 @@ namespace BulkPDF
             }
         }
 
-        public void Close()
+        public void ResetFieldValue()
         {
-            if (pdfReader != null)
-                pdfReader.Close();
+            writerFieldList.Clear();
         }
 
         public void SaveFilledPDF(string filePath, bool finalize, bool unicode, bool customFont, string customFontPath)
@@ -101,7 +114,7 @@ namespace BulkPDF
                 {
                     string value = field.Value;
 
-                    // AcroFields radiobutton start by zero -> dataSourceIndex-1 
+                    // AcroFields radiobutton start by zero -> dataSourceIndex-1
                     if (pdfStamper.AcroFields.GetFieldType(field.Name) == (int)AcroFieldsTypes.RADIO_BUTTON)
                     {
                         int radiobuttonIndex = 0;
@@ -114,7 +127,7 @@ namespace BulkPDF
 
                     // Different font
                     var fontPath = (customFont) ? customFontPath : Path.Combine(Directory.GetCurrentDirectory(), "unifont.ttf");
-                    if(unicode || customFont)
+                    if (unicode || customFont)
                     {
                         BaseFont bf = BaseFont.CreateFont(fontPath, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
                         pdfStamper.AcroFields.AddSubstitutionFont(bf);
@@ -165,7 +178,6 @@ namespace BulkPDF
                 }
             }
 
-
             pdfStamper.Close();
             byte[] content = pdfStamperMemoryStream.ToArray();
 
@@ -192,23 +204,39 @@ namespace BulkPDF
             writerFieldList.Add(field);
         }
 
-        public void ResetFieldValue()
+        private List<PDFField> ListDynamicXFAFields(System.Xml.XmlNode n)
         {
-            writerFieldList.Clear();
-        }
+            List<PDFField> pdfFields = new List<PDFField>();
 
-        public List<PDFField> ListFields()
-        {
-            XfaForm xfa = new XfaForm(pdfReader);
-            if (isDynamicXFA)
+            foreach (System.Xml.XmlNode child in n.ChildNodes) // > 0 Childs == Group
+                pdfFields.AddRange(ListDynamicXFAFields(child)); // Search field
+
+            if (n.ChildNodes.Count == 0) // 0 Childs == Field
             {
                 var acroFields = pdfReader.AcroFields;
-                return ListDynamicXFAFields(acroFields.Xfa.DatasetsNode.FirstChild);
+
+                var pdfField = new PDFField();
+
+                // If a value is set the value of n.Name would be "#text"
+                if ((n.Name.ToCharArray(0, 1))[0] != '#')
+                {
+                    pdfField.Name = acroFields.GetTranslatedFieldName(n.Name);
+                }
+                else
+                {
+                    pdfField.Name = acroFields.GetTranslatedFieldName(n.ParentNode.Name);
+                }
+
+                pdfField.CurrentValue = n.Value;
+
+                pdfField.Typ = "";
+
+                pdfFields.Add(pdfField);
+
+                return pdfFields;
             }
-            else
-            {
-                return ListGenericFields();
-            }
+
+            return pdfFields;
         }
 
         private List<PDFField> ListGenericFields()
@@ -246,39 +274,11 @@ namespace BulkPDF
             return fields;
         }
 
-        private List<PDFField> ListDynamicXFAFields(System.Xml.XmlNode n)
+        private struct FieldWriteData
         {
-            List<PDFField> pdfFields = new List<PDFField>();
-
-            foreach (System.Xml.XmlNode child in n.ChildNodes) // > 0 Childs == Group
-                pdfFields.AddRange(ListDynamicXFAFields(child)); // Search field
-
-            if (n.ChildNodes.Count == 0) // 0 Childs == Field 
-            {
-                var acroFields = pdfReader.AcroFields;
-
-                var pdfField = new PDFField();
-
-                // If a value is set the value of n.Name would be "#text"
-                if ((n.Name.ToCharArray(0, 1))[0] != '#')
-                {
-                    pdfField.Name = acroFields.GetTranslatedFieldName(n.Name);
-                }
-                else
-                {
-                    pdfField.Name = acroFields.GetTranslatedFieldName(n.ParentNode.Name);
-                }
-
-                pdfField.CurrentValue = n.Value;
-
-                pdfField.Typ = "";
-
-                pdfFields.Add(pdfField);
-
-                return pdfFields;
-            }
-
-            return pdfFields;
+            public bool MakeReadOnly;
+            public string Name;
+            public string Value;
         }
     }
 }

@@ -404,57 +404,6 @@
         ZuZT+BoAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bDonate.Text" xml:space="preserve">
-    <value>Spenden</value>
-  </data>
-  <data name="tbDataSourceSelect.Text" xml:space="preserve">
-    <value>SpreadsheetSelect</value>
-  </data>
-  <data name="tbCustomFontPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>115, 46</value>
-  </data>
-  <data name="bSelectOwnFont.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 44</value>
-  </data>
-  <data name="bSelectOwnFont.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 23</value>
-  </data>
-  <data name="bSelectOwnFont.Text" xml:space="preserve">
-    <value>Auswählen...</value>
-  </data>
-  <data name="cbCustomFont.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 46</value>
-  </data>
-  <data name="cbCustomFont.Text" xml:space="preserve">
-    <value>Eigene Schriftart</value>
-  </data>
-  <data name="cbFinalize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 17</value>
-  </data>
-  <data name="cbFinalize.Text" xml:space="preserve">
-    <value>Schreibschutz</value>
-  </data>
-  <data name="gbOptions.Text" xml:space="preserve">
-    <value>Optionen</value>
-  </data>
-  <data name="gbOuput.Text" xml:space="preserve">
-    <value>Ausgabeverzeichnis</value>
-  </data>
-  <data name="bSaveConfiguration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 261</value>
-  </data>
-  <data name="bSaveConfiguration.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 23</value>
-  </data>
-  <data name="bSaveConfiguration.Text" xml:space="preserve">
-    <value>Konfiguration speichern</value>
-  </data>
-  <data name="gbFilename.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="gbFilename.Text" xml:space="preserve">
-    <value>Dateiname</value>
-  </data>
   <data name="llLicenses.Location" type="System.Drawing.Point, System.Drawing">
     <value>235, 245</value>
   </data>
@@ -485,9 +434,6 @@ Wir empfehlen bei der ersten Benutzung der Anwendung sich die mitgelieferten Bei
   <data name="rtbReselectWarning.Text" xml:space="preserve">
     <value>Warnung: Alle weiteren Änderungen an der Tabellenkalkulationsdatei werden nach der Auswahl der Datei nicht von BulkPDF übernommen. Sie müssen die Datei erneut auswählen um Änderungen zu übernehmen.</value>
   </data>
-  <data name="gbSpreadsheet.Text" xml:space="preserve">
-    <value>Tabellenkalkulationsdatei</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="cbSpreadsheetTable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -510,8 +456,8 @@ Wir empfehlen bei der ersten Benutzung der Anwendung sich die mitgelieferten Bei
   <data name="tbSpreadsheet.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="gbSpreadsheetInformation.Text" xml:space="preserve">
-    <value>Tabellenkalkulationsdate Informationen</value>
+  <data name="gbSpreadsheet.Text" xml:space="preserve">
+    <value>Tabellenkalkulationsdatei</value>
   </data>
   <data name="lPossibleColumnsValue.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -561,6 +507,12 @@ Wir empfehlen bei der ersten Benutzung der Anwendung sich die mitgelieferten Bei
   <data name="lPossibleRows.Text" xml:space="preserve">
     <value>Anzahl ermittelter Zeilen:</value>
   </data>
+  <data name="gbSpreadsheetInformation.Text" xml:space="preserve">
+    <value>Tabellenkalkulationsdate Informationen</value>
+  </data>
+  <data name="tbDataSourceSelect.Text" xml:space="preserve">
+    <value>SpreadsheetSelect</value>
+  </data>
   <data name="ColField.HeaderText" xml:space="preserve">
     <value>Feld</value>
   </data>
@@ -585,6 +537,33 @@ Wir empfehlen bei der ersten Benutzung der Anwendung sich die mitgelieferten Bei
   <data name="bSelectPDF.Text" xml:space="preserve">
     <value>PDF-Datei auswählen</value>
   </data>
+  <data name="tbCustomFontPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>115, 46</value>
+  </data>
+  <data name="bSelectOwnFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 44</value>
+  </data>
+  <data name="bSelectOwnFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 23</value>
+  </data>
+  <data name="bSelectOwnFont.Text" xml:space="preserve">
+    <value>Auswählen...</value>
+  </data>
+  <data name="cbCustomFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 46</value>
+  </data>
+  <data name="cbCustomFont.Text" xml:space="preserve">
+    <value>Eigene Schriftart</value>
+  </data>
+  <data name="cbFinalize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 17</value>
+  </data>
+  <data name="cbFinalize.Text" xml:space="preserve">
+    <value>Schreibschutz</value>
+  </data>
+  <data name="gbOptions.Text" xml:space="preserve">
+    <value>Optionen</value>
+  </data>
   <data name="tbOutputDir.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 20</value>
   </data>
@@ -596,6 +575,18 @@ Wir empfehlen bei der ersten Benutzung der Anwendung sich die mitgelieferten Bei
   </data>
   <data name="bSelectOutputPath.Text" xml:space="preserve">
     <value>Durchsuchen...</value>
+  </data>
+  <data name="gbOuput.Text" xml:space="preserve">
+    <value>Ausgabeverzeichnis</value>
+  </data>
+  <data name="bSaveConfiguration.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 261</value>
+  </data>
+  <data name="bSaveConfiguration.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 23</value>
+  </data>
+  <data name="bSaveConfiguration.Text" xml:space="preserve">
+    <value>Konfiguration speichern</value>
   </data>
   <data name="cbRowNumberFilename.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 17</value>
@@ -611,6 +602,12 @@ Wir empfehlen bei der ersten Benutzung der Anwendung sich die mitgelieferten Bei
   </data>
   <data name="lExampleFilename.Text" xml:space="preserve">
     <value>Beispiel:</value>
+  </data>
+  <data name="gbFilename.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="gbFilename.Text" xml:space="preserve">
+    <value>Dateiname</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

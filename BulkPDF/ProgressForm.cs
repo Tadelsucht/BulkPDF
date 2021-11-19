@@ -1,20 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace BulkPDF
 {
     public partial class ProgressForm : Form
     {
-        bool isAborted = false;
-        int percent;
-        Timer progressbarTimer;
-        bool isFinished = false;
+        private bool isAborted = false;
+        private bool isFinished = false;
+        private int percent;
+        private Timer progressbarTimer;
 
         public ProgressForm()
         {
@@ -26,9 +21,14 @@ namespace BulkPDF
             progressbarTimer.Start();
         }
 
-        void timer_Tick(object sender, EventArgs e)
+        public bool GetIsAborted()
         {
-            UpdateProgressBar();
+            return isAborted;
+        }
+
+        public void SetPercent(int percent)
+        {
+            this.percent = percent;
         }
 
         public void UpdateProgressBar()
@@ -54,21 +54,16 @@ namespace BulkPDF
             }
         }
 
-        public void SetPercent(int percent)
-        {
-            this.percent = percent;
-        }
-
-        public bool GetIsAborted()
-        {
-            return isAborted;
-        }
-
         private void bAbort_Click(object sender, EventArgs e)
         {
             isAborted = true;
             MessageBox.Show(Properties.Resources.MessageAborted);
             this.Close();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            UpdateProgressBar();
         }
     }
 }

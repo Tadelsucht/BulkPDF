@@ -3,37 +3,62 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 
 namespace BulkPDF
 {
     public class Spreadsheet : IDataSource
     {
-        public string Parameter
-        {
-            get { return parameter; }
-        }
-        string parameter = "";
+        private List<string> columns = new List<string>();
+
+        private string parameter = "";
+
+        private int possibleRows = 0;
+
+        private int rowIndex = 2;
+
+        private Hashtable rowValues = new Hashtable();
+
+        private SLDocument slDocument;
+
         public List<string> Columns
         {
             get { return columns; }
         }
-        List<string> columns = new List<string>();
-        public Hashtable RowValues
+
+        public string Parameter
         {
-            get { return rowValues; }
+            get { return parameter; }
         }
-        Hashtable rowValues = new Hashtable();
+
         public int PossibleRows
         {
             get { return possibleRows; }
         }
-        int possibleRows = 0;
 
-        SLDocument slDocument;
-        int rowIndex = 2;
+        public Hashtable RowValues
+        {
+            get { return rowValues; }
+        }
 
+        public void Close()
+        {
+        }
+
+        public string GetField(int columnIndex)
+        {
+            return slDocument.GetCellValueAsString(rowIndex, columnIndex);
+        }
+
+        public List<string> GetSheetNames()
+        {
+            return slDocument.GetSheetNames();
+        }
+
+        public bool NextRow()
+        {
+            rowIndex++;
+            return true;
+        }
 
         public void Open(string filePath)
         {
@@ -49,30 +74,9 @@ namespace BulkPDF
             SetSheet(slDocument.GetSheetNames()[0]);
         }
 
-        public void Close()
-        {
-
-        }
-
-        public bool NextRow()
-        {
-            rowIndex++;
-            return true;
-        }
-
         public void ResetRowCounter()
         {
             rowIndex = 2;
-        }
-
-        public string GetField(int columnIndex)
-        {
-            return slDocument.GetCellValueAsString(rowIndex, columnIndex);
-        }
-
-        public List<string> GetSheetNames()
-        {
-            return slDocument.GetSheetNames();
         }
 
         public bool SetSheet(string name)
@@ -83,17 +87,6 @@ namespace BulkPDF
             ResetRowCounter();
 
             return true;
-        }
-
-        private List<string> ListColumns()
-        {
-            List<string> columns = new List<string>();
-
-            for (int x = 1; !string.IsNullOrEmpty(slDocument.GetCellValueAsString(1, x)); x++)
-                columns.Add(slDocument.GetCurrentWorksheetName() + "[.]" + slDocument.GetCellValueAsString(1, x));
-
-
-            return columns;
         }
 
         private int CountPossibleRows()
@@ -126,10 +119,17 @@ namespace BulkPDF
                 }
             }
 
-
             return maxRowsTotal;
         }
 
+        private List<string> ListColumns()
+        {
+            List<string> columns = new List<string>();
 
+            for (int x = 1; !string.IsNullOrEmpty(slDocument.GetCellValueAsString(1, x)); x++)
+                columns.Add(slDocument.GetCurrentWorksheetName() + "[.]" + slDocument.GetCellValueAsString(1, x));
+
+            return columns;
+        }
     }
 }

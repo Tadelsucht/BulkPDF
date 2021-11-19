@@ -1,14 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Resources;
-using System.Text;
-using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
@@ -17,14 +11,14 @@ namespace BulkPDF
 {
     public partial class MainForm : Form
     {
-        PDF pdf;
-        IDataSource dataSource;
-        Dictionary<string, PDFField> pdfFields = new Dictionary<string, PDFField>();
-        ProgressForm progressForm;
-        int tempSelectedIndex;
-        bool finalize = false;
-        bool unicode = false;
-        bool customFont = false;
+        private bool customFont = false;
+        private IDataSource dataSource;
+        private bool finalize = false;
+        private PDF pdf;
+        private Dictionary<string, PDFField> pdfFields = new Dictionary<string, PDFField>();
+        private ProgressForm progressForm;
+        private int tempSelectedIndex;
+        private bool unicode = false;
 
         public MainForm()
         {
@@ -35,13 +29,17 @@ namespace BulkPDF
         }
 
         /**************************************************/
+
         #region WizardPage
+
         /**************************************************/
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private void bBack_Click(object sender, EventArgs e)
         {
-            wizardPages.SelectedIndex = 1;
-            wizardPages.SelectedIndex = 0;
+            this.SuspendLayout();
+            if (wizardPages.SelectedIndex > 0)
+                wizardPages.SelectedIndex -= 1;
+            this.ResumeLayout();
         }
 
         private void bNext_Click(object sender, EventArgs e)
@@ -55,12 +53,10 @@ namespace BulkPDF
             }
         }
 
-        private void bBack_Click(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
-            this.SuspendLayout();
-            if (wizardPages.SelectedIndex > 0)
-                wizardPages.SelectedIndex -= 1;
-            this.ResumeLayout();
+            wizardPages.SelectedIndex = 1;
+            wizardPages.SelectedIndex = 0;
         }
 
         private void wizardPages_SelectedIndexChanged(object sender, EventArgs e)
@@ -87,8 +83,29 @@ namespace BulkPDF
         }
 
         /**************************************************/
-        #endregion
+
+        #endregion WizardPage
+
         /**************************************************/
+
+        private void bSelectOwnFont_Click(object sender, EventArgs e)
+        {
+            // Select File
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.InitialDirectory = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            openFileDialog.Filter = "Font|*.ttf;";
+            openFileDialog.FilterIndex = 1;
+            openFileDialog.Multiselect = false;
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                tbCustomFontPath.Text = openFileDialog.FileName;
+            }
+        }
+
+        private void bShortcutCreator_Click(object sender, EventArgs e)
+        {
+            (new ShortcutCreator()).ShowDialog();
+        }
 
         private bool IsNextPageOk()
         {
@@ -106,6 +123,7 @@ namespace BulkPDF
                         return false;
                     }
                     break;
+
                 case "PDFSelect":
                     if (pdf == null)
                     {
@@ -118,10 +136,9 @@ namespace BulkPDF
             return true;
         }
 
-
-        private void bDonate_Click(object sender, EventArgs e)
+        private void llBulkPDFde_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://bulkpdf.de/donate");
+            System.Diagnostics.Process.Start("https://bulkpdf.de/");
         }
 
         private void llDokumentation_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -135,14 +152,28 @@ namespace BulkPDF
             licenses.ShowDialog();
         }
 
-        private void llBulkPDFde_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://bulkpdf.de/");
-        }
+        /**************************************************/
+
+        #region Fill
 
         /**************************************************/
-        #region Fill
-        /**************************************************/
+
+        private void backGroundWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            try
+            {
+                PDFFiller.CreateFiles(pdf, finalize, unicode, customFont, tbCustomFontPath.Text, dataSource, pdfFields, tbOutputDir.Text + @"\", ConcatFilename, progressForm.SetPercent, progressForm.GetIsAborted);
+            }
+            catch (Exception ex)
+            {
+                ExceptionHandler.Throw(Properties.Resources.ExceptionPDFFileAlreadyExistsAndInUse, ex.ToString());
+
+                this.Invoke((MethodInvoker)delegate
+                {
+                    progressForm.Close();
+                });
+            }
+        }
 
         private void bFinish_Click(object sender, EventArgs e)
         {
@@ -186,20 +217,11 @@ namespace BulkPDF
             }
         }
 
-        void backGroundWorker_DoWork(object sender, DoWorkEventArgs e)
+        private void bSelectOutputPath_Click(object sender, EventArgs e)
         {
-            try
-            {
-                PDFFiller.CreateFiles(pdf, finalize, unicode, customFont, tbCustomFontPath.Text, dataSource, pdfFields, tbOutputDir.Text + @"\", ConcatFilename, progressForm.SetPercent, progressForm.GetIsAborted);
-            }
-            catch (Exception ex)
-            {
-                ExceptionHandler.Throw(Properties.Resources.ExceptionPDFFileAlreadyExistsAndInUse, ex.ToString());
-                
-                this.Invoke((MethodInvoker)delegate {
-                    progressForm.Close();
-                });
-            }
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+                tbOutputDir.Text = folderBrowserDialog.SelectedPath;
         }
 
         private string ConcatFilename(int dataSourceRow)
@@ -252,19 +274,16 @@ namespace BulkPDF
             return false;
         }
 
-        private void bSelectOutputPath_Click(object sender, EventArgs e)
-        {
-            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
-            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
-                tbOutputDir.Text = folderBrowserDialog.SelectedPath;
-        }
-
         /**************************************************/
-        #endregion
+
+        #endregion Fill
+
         /**************************************************/
 
         /**************************************************/
+
         #region PDFSelect
+
         /**************************************************/
 
         private void bSelectPDF_Click(object sender, EventArgs e)
@@ -283,58 +302,6 @@ namespace BulkPDF
                 pdf = new PDF();
                 OpenPDF(openFileDialog.FileName);
             }
-        }
-
-        private bool OpenPDF(string pdfPath)
-        {
-            try
-            {
-                ResetPDF();
-                pdf = new PDF();
-                pdf.Open(pdfPath);
-
-                // Fill DataGridView
-                tbPDF.Text = pdfPath;
-                if (pdf.IsXFA)
-                {
-                    tbFormTyp.Text = "XFA Form";
-                }
-                else
-                {
-                    tbFormTyp.Text = "Acroform";
-                }
-                foreach (PDFField pdfField in pdf.ListFields())
-                {
-                    dgvBulkPDF.Rows.Add();
-                    int row = dgvBulkPDF.Rows.Count - 1;
-
-                    dgvBulkPDF.Rows[row].Cells["ColField"].Value = pdfField.Name;
-                    dgvBulkPDF.Rows[row].Cells["ColTyp"].Value = pdfField.Typ;
-                    dgvBulkPDF.Rows[row].Cells["ColValue"].Value = pdfField.CurrentValue;
-                    pdfFields.Add(pdfField.Name, pdfField);
-                    
-                    var dgvButtonCell = new DataGridViewButtonCell();
-                    dgvButtonCell.Value = Properties.Resources.CellButtonSelect;
-                    dgvBulkPDF.Rows[row].Cells["ColOption"] = dgvButtonCell;
-                }
-
-                return true;
-            }
-            catch (Exception ex)
-            {
-                ExceptionHandler.Throw(String.Format(Properties.Resources.ExceptionPDFIsCorrupted, pdfPath), ex.ToString());
-                ResetPDF();
-            }
-            return false;
-        }
-
-        private void ResetPDF()
-        {
-            pdf = null;
-            dgvBulkPDF.Rows.Clear();
-            pdfFields.Clear();
-            tbPDF.Text = "";
-            tbFormTyp.Text = "";
         }
 
         private void dgvBulkPDF_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -365,68 +332,69 @@ namespace BulkPDF
             }
         }
 
-        /**************************************************/
-        #endregion
-        /**************************************************/
-
-        /**************************************************/
-        #region Save & Load
-        /**************************************************/
-
-        private void bSaveConfiguration_Click(object sender, EventArgs e)
+        private bool OpenPDF(string pdfPath)
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "BulkPDF Options|*.bulkpdf";
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            try
             {
-                var xmlWriterSettings = new XmlWriterSettings();
-                xmlWriterSettings.Indent = true;
-                xmlWriterSettings.IndentChars = "  ";
-                var xmlWriter = XmlWriter.Create(saveFileDialog.FileName, xmlWriterSettings);
-                xmlWriter.WriteStartDocument();
-                xmlWriter.WriteStartElement("BulkPDF"); // <BulkPDF>
-                xmlWriter.WriteElementString("Version", Application.ProductVersion.ToString());
-                xmlWriter.WriteStartElement("Options"); // <Options>
-                xmlWriter.WriteStartElement("DataSource"); // <DataSource>
-                xmlWriter.WriteElementString("Typ", "Spreadsheet");
-                xmlWriter.WriteElementString("Parameter", dataSource.Parameter);
-                xmlWriter.WriteEndElement(); // </DataSource>
-                xmlWriter.WriteStartElement("PDF"); // <PDF>
-                xmlWriter.WriteElementString("Filepath", tbPDF.Text);
-                xmlWriter.WriteEndElement(); // </PDF>
-                xmlWriter.WriteStartElement("Spreadsheet"); // <Spreadsheet>
-                xmlWriter.WriteElementString("Table", (string)cbSpreadsheetTable.SelectedItem);
-                xmlWriter.WriteEndElement();  // </Spreadsheet>
-                xmlWriter.WriteStartElement("Filename"); // <Filename>
-                xmlWriter.WriteElementString("Prefix", tbPrefix.Text);
-                xmlWriter.WriteElementString("ValueFromDataSource", cbUseValueFromDataSource.Checked.ToString());
-                xmlWriter.WriteElementString("DataSource", (string)cbDataSourceColumnsFilename.SelectedItem);
-                xmlWriter.WriteElementString("Suffix", tbSuffix.Text);
-                xmlWriter.WriteElementString("RowNumber", cbRowNumberFilename.Checked.ToString());
-                xmlWriter.WriteEndElement(); // </Filename>
-                xmlWriter.WriteElementString("Finalize", cbFinalize.Checked.ToString());
-                xmlWriter.WriteElementString("Unicode", cbUnicode.Checked.ToString());
-                xmlWriter.WriteElementString("CustomFont", cbCustomFont.Checked.ToString());
-                xmlWriter.WriteElementString("CustomFontPath", tbCustomFontPath.Text);
-                xmlWriter.WriteElementString("OutputDir", tbOutputDir.Text);
-                xmlWriter.WriteEndElement(); // </Options>
+                ResetPDF();
+                pdf = new PDF();
+                pdf.Open(pdfPath);
 
-                xmlWriter.WriteStartElement("PDFFieldValues"); // <PDFFieldValues>
-                foreach (var pdfField in pdfFields)
+                // Fill DataGridView
+                tbPDF.Text = pdfPath;
+                if (pdf.IsXFA)
                 {
-                    xmlWriter.WriteStartElement("PDFFieldValue"); // <PDFFieldValue>
-                    xmlWriter.WriteElementString("Name", pdfField.Value.Name);
-                    xmlWriter.WriteElementString("NewValue", pdfField.Value.DataSourceValue);
-                    xmlWriter.WriteElementString("UseValueFromDataSource", pdfField.Value.UseValueFromDataSource.ToString());
-                    xmlWriter.WriteElementString("MakeReadOnly", pdfField.Value.MakeReadOnly.ToString());
-                    xmlWriter.WriteEndElement(); // </PDFFieldValue>
+                    tbFormTyp.Text = "XFA Form";
                 }
-                xmlWriter.WriteEndElement(); // </PDFFieldValues>
-                xmlWriter.WriteEndElement(); // </BulkPDF>
-                xmlWriter.WriteEndDocument();
-                xmlWriter.Close();
+                else
+                {
+                    tbFormTyp.Text = "Acroform";
+                }
+                foreach (PDFField pdfField in pdf.ListFields())
+                {
+                    dgvBulkPDF.Rows.Add();
+                    int row = dgvBulkPDF.Rows.Count - 1;
+
+                    dgvBulkPDF.Rows[row].Cells["ColField"].Value = pdfField.Name;
+                    dgvBulkPDF.Rows[row].Cells["ColTyp"].Value = pdfField.Typ;
+                    dgvBulkPDF.Rows[row].Cells["ColValue"].Value = pdfField.CurrentValue;
+                    pdfFields.Add(pdfField.Name, pdfField);
+
+                    var dgvButtonCell = new DataGridViewButtonCell();
+                    dgvButtonCell.Value = Properties.Resources.CellButtonSelect;
+                    dgvBulkPDF.Rows[row].Cells["ColOption"] = dgvButtonCell;
+                }
+
+                return true;
             }
+            catch (Exception ex)
+            {
+                ExceptionHandler.Throw(String.Format(Properties.Resources.ExceptionPDFIsCorrupted, pdfPath), ex.ToString());
+                ResetPDF();
+            }
+            return false;
         }
+
+        private void ResetPDF()
+        {
+            pdf = null;
+            dgvBulkPDF.Rows.Clear();
+            pdfFields.Clear();
+            tbPDF.Text = "";
+            tbFormTyp.Text = "";
+        }
+
+        /**************************************************/
+
+        #endregion PDFSelect
+
+        /**************************************************/
+
+        /**************************************************/
+
+        #region Save & Load
+
+        /**************************************************/
 
         private void bLoadConfiguration_Click(object sender, EventArgs e)
         {
@@ -528,13 +496,83 @@ namespace BulkPDF
             }
         }
 
+        private void bSaveConfiguration_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "BulkPDF Options|*.bulkpdf";
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                var xmlWriterSettings = new XmlWriterSettings();
+                xmlWriterSettings.Indent = true;
+                xmlWriterSettings.IndentChars = "  ";
+                var xmlWriter = XmlWriter.Create(saveFileDialog.FileName, xmlWriterSettings);
+                xmlWriter.WriteStartDocument();
+                xmlWriter.WriteStartElement("BulkPDF"); // <BulkPDF>
+                xmlWriter.WriteElementString("Version", Application.ProductVersion.ToString());
+                xmlWriter.WriteStartElement("Options"); // <Options>
+                xmlWriter.WriteStartElement("DataSource"); // <DataSource>
+                xmlWriter.WriteElementString("Typ", "Spreadsheet");
+                xmlWriter.WriteElementString("Parameter", dataSource.Parameter);
+                xmlWriter.WriteEndElement(); // </DataSource>
+                xmlWriter.WriteStartElement("PDF"); // <PDF>
+                xmlWriter.WriteElementString("Filepath", tbPDF.Text);
+                xmlWriter.WriteEndElement(); // </PDF>
+                xmlWriter.WriteStartElement("Spreadsheet"); // <Spreadsheet>
+                xmlWriter.WriteElementString("Table", (string)cbSpreadsheetTable.SelectedItem);
+                xmlWriter.WriteEndElement();  // </Spreadsheet>
+                xmlWriter.WriteStartElement("Filename"); // <Filename>
+                xmlWriter.WriteElementString("Prefix", tbPrefix.Text);
+                xmlWriter.WriteElementString("ValueFromDataSource", cbUseValueFromDataSource.Checked.ToString());
+                xmlWriter.WriteElementString("DataSource", (string)cbDataSourceColumnsFilename.SelectedItem);
+                xmlWriter.WriteElementString("Suffix", tbSuffix.Text);
+                xmlWriter.WriteElementString("RowNumber", cbRowNumberFilename.Checked.ToString());
+                xmlWriter.WriteEndElement(); // </Filename>
+                xmlWriter.WriteElementString("Finalize", cbFinalize.Checked.ToString());
+                xmlWriter.WriteElementString("Unicode", cbUnicode.Checked.ToString());
+                xmlWriter.WriteElementString("CustomFont", cbCustomFont.Checked.ToString());
+                xmlWriter.WriteElementString("CustomFontPath", tbCustomFontPath.Text);
+                xmlWriter.WriteElementString("OutputDir", tbOutputDir.Text);
+                xmlWriter.WriteEndElement(); // </Options>
+
+                xmlWriter.WriteStartElement("PDFFieldValues"); // <PDFFieldValues>
+                foreach (var pdfField in pdfFields)
+                {
+                    xmlWriter.WriteStartElement("PDFFieldValue"); // <PDFFieldValue>
+                    xmlWriter.WriteElementString("Name", pdfField.Value.Name);
+                    xmlWriter.WriteElementString("NewValue", pdfField.Value.DataSourceValue);
+                    xmlWriter.WriteElementString("UseValueFromDataSource", pdfField.Value.UseValueFromDataSource.ToString());
+                    xmlWriter.WriteElementString("MakeReadOnly", pdfField.Value.MakeReadOnly.ToString());
+                    xmlWriter.WriteEndElement(); // </PDFFieldValue>
+                }
+                xmlWriter.WriteEndElement(); // </PDFFieldValues>
+                xmlWriter.WriteEndElement(); // </BulkPDF>
+                xmlWriter.WriteEndDocument();
+                xmlWriter.Close();
+            }
+        }
+
         /**************************************************/
-        #endregion
+
+        #endregion Save & Load
+
         /**************************************************/
 
         /**************************************************/
+
         #region DataSource
+
         /**************************************************/
+
+        private void ResetDataSource()
+        {
+            tbSpreadsheet.Text = "";
+            dataSource = null;
+            lPossibleRowsValue.Text = "0";
+            lPossibleColumnsValue.Text = "0";
+            cbDataSourceColumnsExampleSpreadsheet.Items.Clear();
+            cbDataSourceColumnsFilename.Items.Clear();
+            cbSpreadsheetTable.Items.Clear();
+        }
 
         private void UpdateDataSource()
         {
@@ -555,26 +593,25 @@ namespace BulkPDF
             cbDataSourceColumnsFilename.SelectedIndex = 0;
         }
 
-        private void ResetDataSource()
+        /**************************************************/
+
+        #endregion DataSource
+
+        /**************************************************/
+
+        /**************************************************/
+
+        #region ExampleFilename
+
+        /**************************************************/
+
+        private void cbDataSourceColumnsFilename_SelectedIndexChanged(object sender, EventArgs e)
         {
-            tbSpreadsheet.Text = "";
-            dataSource = null;
-            lPossibleRowsValue.Text = "0";
-            lPossibleColumnsValue.Text = "0";
-            cbDataSourceColumnsExampleSpreadsheet.Items.Clear();
-            cbDataSourceColumnsFilename.Items.Clear();
-            cbSpreadsheetTable.Items.Clear();
+            tempSelectedIndex = cbDataSourceColumnsFilename.SelectedIndex;
+            UpdateExampleFilename();
         }
 
-        /**************************************************/
-        #endregion
-        /**************************************************/
-
-        /**************************************************/
-        #region ExampleFilename
-        /**************************************************/
-
-        private void tbSuffix_TextChanged(object sender, EventArgs e)
+        private void cbRowNumberFilename_CheckedChanged(object sender, EventArgs e)
         {
             UpdateExampleFilename();
         }
@@ -584,18 +621,12 @@ namespace BulkPDF
             UpdateExampleFilename();
         }
 
-        private void cbDataSourceColumnsFilename_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            tempSelectedIndex = cbDataSourceColumnsFilename.SelectedIndex;
-            UpdateExampleFilename();
-        }
-
         private void tbPrefix_TextChanged(object sender, EventArgs e)
         {
             UpdateExampleFilename();
         }
 
-        private void cbRowNumberFilename_CheckedChanged(object sender, EventArgs e)
+        private void tbSuffix_TextChanged(object sender, EventArgs e)
         {
             UpdateExampleFilename();
         }
@@ -607,11 +638,15 @@ namespace BulkPDF
         }
 
         /**************************************************/
-        #endregion
+
+        #endregion ExampleFilename
+
         /**************************************************/
 
         /**************************************************/
+
         #region SpreadsheetSelect
+
         /**************************************************/
 
         private void bSelectSpreadsheet_Click(object sender, EventArgs e)
@@ -633,6 +668,13 @@ namespace BulkPDF
 
                 OpenSpreadsheet(openFileDialog.FileName);
             }
+        }
+
+        private void cbTable_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ((Spreadsheet)dataSource).SetSheet((string)cbSpreadsheetTable.SelectedItem);
+            UpdateDataSource();
+            ResetPDF();
         }
 
         private bool OpenSpreadsheet(string filePath)
@@ -661,22 +703,11 @@ namespace BulkPDF
             return false;
         }
 
-        private void cbTable_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            ((Spreadsheet)dataSource).SetSheet((string)cbSpreadsheetTable.SelectedItem);
-            UpdateDataSource();
-            ResetPDF();
-        }
-
-        /**************************************************/
-        #endregion
         /**************************************************/
 
+        #endregion SpreadsheetSelect
 
-        private void bShortcutCreator_Click(object sender, EventArgs e)
-        {
-            (new ShortcutCreator()).ShowDialog();
-        }
+        /**************************************************/
 
         private void llSupport_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -685,22 +716,6 @@ namespace BulkPDF
 
         private void MainForm_Shown(object sender, EventArgs e)
         {
-            var donateForm = new DonateForm();
-            donateForm.ShowDialog();
-        }
-
-        private void bSelectOwnFont_Click(object sender, EventArgs e)
-        {
-            // Select File
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.InitialDirectory = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            openFileDialog.Filter = "Font|*.ttf;";
-            openFileDialog.FilterIndex = 1;
-            openFileDialog.Multiselect = false;
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                tbCustomFontPath.Text = openFileDialog.FileName;
-            }
         }
     }
 }

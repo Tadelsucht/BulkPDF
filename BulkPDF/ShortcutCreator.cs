@@ -1,38 +1,15 @@
-﻿using IWshRuntimeLibrary;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Text;
+﻿using System;
 using System.Windows.Forms;
 
 namespace BulkPDF
 {
     public partial class ShortcutCreator : Form
     {
-        string configurationFilePath;
-
+        private string configurationFilePath;
 
         public ShortcutCreator()
         {
             InitializeComponent();
-        }
-
-        private void bSelectConfiguration_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "BulkPDF Options|*.bulkpdf";
-            openFileDialog.FilterIndex = 1;
-            openFileDialog.Multiselect = false;
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                configurationFilePath = openFileDialog.FileName;
-                tbConfigurationPath.Text = configurationFilePath;
-            }
         }
 
         private void bCreateShortcut_Click(object sender, EventArgs e)
@@ -58,6 +35,19 @@ namespace BulkPDF
             //{
             //    MessageBox.Show(Properties.Resources.MessageSelectConfiguration);
             //}
+        }
+
+        private void bSelectConfiguration_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "BulkPDF Options|*.bulkpdf";
+            openFileDialog.FilterIndex = 1;
+            openFileDialog.Multiselect = false;
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                configurationFilePath = openFileDialog.FileName;
+                tbConfigurationPath.Text = configurationFilePath;
+            }
         }
     }
 }

@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+﻿using System.IO;
 using System.Text.RegularExpressions;
 
 namespace BulkPDF
 {
-    static class OptionFileHandler
+    internal static class OptionFileHandler
     {
-        static string optionFileName = "options.txt"; 
+        private static string optionFileName = "options.txt";
 
         public static string GetOptionValue(string name)
         {

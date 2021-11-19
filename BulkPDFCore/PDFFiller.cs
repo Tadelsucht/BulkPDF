@@ -1,14 +1,13 @@
 ﻿//Sample license text.
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace BulkPDF
 {
     public delegate string DelGetFilename(int dataSourceRow);
-    public delegate void DelSetPercent(int percent);
+
     public delegate bool DelIsAborted();
+
+    public delegate void DelSetPercent(int percent);
 
     public static class PDFFiller
     {

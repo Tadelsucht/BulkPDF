@@ -1,23 +1,20 @@
-﻿using System;
+﻿using BulkPDF;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using BulkPDF;
-using System.Xml.Linq;
 using System.IO;
+using System.Xml.Linq;
 
 namespace BulkPDFConsole
 {
-    class Worker
+    internal class Worker
     {
-        IDataSource dataSource;
-        PDF pdf;
-        string prefix;
-        string suffix;
-        int DataSourceColumnsFilenameIndex;
-        bool useRowNumber;
-        bool useValueFromDataSource;
-
+        private IDataSource dataSource;
+        private int DataSourceColumnsFilenameIndex;
+        private PDF pdf;
+        private string prefix;
+        private string suffix;
+        private bool useRowNumber;
+        private bool useValueFromDataSource;
 
         public bool Do(string configurationFilePath)
         {
@@ -50,7 +47,7 @@ namespace BulkPDFConsole
                     pdfField.DataSourceValue = node.Element("NewValue").Value;
                     pdfField.UseValueFromDataSource = Convert.ToBoolean(node.Element("UseValueFromDataSource").Value);
                     pdfField.MakeReadOnly = Convert.ToBoolean(node.Element("MakeReadOnly").Value);
-                    
+
                     pdfFields.Add(pdfField.Name, pdfField);
                 }
 
@@ -87,7 +84,6 @@ namespace BulkPDFConsole
                     // Ignore. Ugly but don't hurt anyone.
                 }
                 string outputDir = Environment.ExpandEnvironmentVariables(xmlOptions.Element("OutputDir").Value);
-
 
                 Console.WriteLine("--- Start processing ---");
                 PDFFiller.CreateFiles(pdf, finalize, unicode, customFont, customFontPath, dataSource, pdfFields, outputDir + @"\", ConcatFilename, WriteLinePercent);

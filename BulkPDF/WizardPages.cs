@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace BulkPDF
 {
-    class WizardPages : TabControl
+    internal class WizardPages : TabControl
     {
         public WizardPages()
         {
