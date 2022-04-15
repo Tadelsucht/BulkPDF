@@ -395,6 +395,14 @@
         ZuZT+BoAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="llBulkPDFde.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 13</value>
+  </data>
+  <data name="rtbWelcome.Text" xml:space="preserve">
+    <value>BulkPDF is a free and easy to use open source software, which allows to automatically fill an existing PDF form with differen values. Only a spreadsheet (Microsoft Excel 2007/2010/2013, LibreOffice or OpenOffice Calc) with the desired values is required.
+
+We recommend to look at the include sample files and to visit the documentation website.</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tbCustomFontPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>

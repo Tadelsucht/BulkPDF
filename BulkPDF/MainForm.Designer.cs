@@ -36,7 +36,6 @@
             this.seperatorLine1 = new BulkPDF.SeperatorLine();
             this.wizardPages = new BulkPDF.WizardPages();
             this.tpWelcome = new System.Windows.Forms.TabPage();
-            this.llSupport = new System.Windows.Forms.LinkLabel();
             this.llBulkPDFde = new System.Windows.Forms.LinkLabel();
             this.llLicenses = new System.Windows.Forms.LinkLabel();
             this.rtbWelcome = new System.Windows.Forms.RichTextBox();
@@ -153,7 +152,6 @@
             // 
             resources.ApplyResources(this.tpWelcome, "tpWelcome");
             this.tpWelcome.BackColor = System.Drawing.SystemColors.Control;
-            this.tpWelcome.Controls.Add(this.llSupport);
             this.tpWelcome.Controls.Add(this.llBulkPDFde);
             this.tpWelcome.Controls.Add(this.llLicenses);
             this.tpWelcome.Controls.Add(this.rtbWelcome);
@@ -162,13 +160,6 @@
             this.tpWelcome.Controls.Add(this.bLoadConfiguration);
             this.tpWelcome.Controls.Add(this.llDokumentation);
             this.tpWelcome.Name = "tpWelcome";
-            // 
-            // llSupport
-            // 
-            resources.ApplyResources(this.llSupport, "llSupport");
-            this.llSupport.Name = "llSupport";
-            this.llSupport.TabStop = true;
-            this.llSupport.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llSupport_LinkClicked);
             // 
             // llBulkPDFde
             // 
@@ -634,7 +625,6 @@
         private System.Windows.Forms.CheckBox cbFinalize;
         private System.Windows.Forms.TextBox tbFormTyp;
         private System.Windows.Forms.RichTextBox rtbReselectWarning;
-        private System.Windows.Forms.LinkLabel llSupport;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColField;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColTyp;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColValue;

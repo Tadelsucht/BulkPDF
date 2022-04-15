@@ -138,12 +138,12 @@ namespace BulkPDF
 
         private void llBulkPDFde_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://bulkpdf.de/");
+            System.Diagnostics.Process.Start("https://opensource.bulkpdf.de/");
         }
 
         private void llDokumentation_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://bulkpdf.de/documentation");
+            System.Diagnostics.Process.Start("https://opensource.bulkpdf.de/documentation");
         }
 
         private void llLicenses_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -407,7 +407,9 @@ namespace BulkPDF
             {
                 try
                 {
-                    XDocument xDocument = XDocument.Parse(File.ReadAllText(openFileDialog.FileName));
+                    var fileString = File.ReadAllText(openFileDialog.FileName);
+                    if (fileString.Contains("BulkPDF-Business")) throw new Exception("This is a BulkPDF-Business configuration file and is not compatible with the open source freeware software BulkPDF.");
+                    XDocument xDocument = XDocument.Parse(fileString);
 
                     //// Options
                     var xmlOptions = xDocument.Root.Element("Options");
