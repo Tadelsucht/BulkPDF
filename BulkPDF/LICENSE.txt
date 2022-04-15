@@ -1,4 +1,4 @@
-Copyright (C) 2015 Julien Bartels
+Copyright (C) 2022 Tadelsucht UG (haftungsbeschränkt)
 
 
                     GNU AFFERO GENERAL PUBLIC LICENSE
