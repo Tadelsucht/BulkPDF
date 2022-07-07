@@ -55,6 +55,8 @@ namespace BulkPDF
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            // Necessary hack to display the correct button(s) after program start
+            wizardPages.SelectedIndex = 1;
             wizardPages.SelectedIndex = 0;
         }
 
