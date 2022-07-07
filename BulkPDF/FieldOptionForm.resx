@@ -112,24 +112,139 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="cbUseValueFromDataSource.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 17</value>
+  <data name="bSet.Text" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="&gt;&gt;cbUseValueFromDataSource.Name" xml:space="preserve">
+    <value>cbUseValueFromDataSource</value>
+  </data>
+  <data name="&gt;&gt;bSet.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>284, 161</value>
+  </data>
+  <data name="&gt;&gt;cbUseFixedValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cbUseValueFromDataSource.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FieldOptionForm</value>
+  </data>
+  <data name="cbReadOnly.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cbUseFixedValue.Name" xml:space="preserve">
+    <value>cbUseFixedValue</value>
   </data>
   <data name="cbUseValueFromDataSource.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 31</value>
   </data>
+  <data name="cbDataSourceColumns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 21</value>
+  </data>
+  <data name="&gt;&gt;cbReadOnly.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bSet.Name" xml:space="preserve">
+    <value>bSet</value>
+  </data>
+  <data name="cbDataSourceColumns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 54</value>
+  </data>
   <data name="&gt;&gt;bSet.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cbDataSourceColumns.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tbFixedValue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cbUseValueFromDataSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Option</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cbUseFixedValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cbUseValueFromDataSource.Text" xml:space="preserve">
+    <value>Use value from data source</value>
+  </data>
+  <data name="&gt;&gt;cbReadOnly.Name" xml:space="preserve">
+    <value>cbReadOnly</value>
+  </data>
+  <data name="&gt;&gt;cbDataSourceColumns.Name" xml:space="preserve">
+    <value>cbDataSourceColumns</value>
+  </data>
+  <data name="&gt;&gt;cbDataSourceColumns.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbUseValueFromDataSource.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cbReadOnly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 8</value>
+  </data>
+  <data name="cbReadOnly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 17</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbDataSourceColumns.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cbReadOnly.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="cbDataSourceColumns.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tbFixedValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 20</value>
+  </data>
+  <data name="cbUseValueFromDataSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 17</value>
+  </data>
+  <data name="bSet.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cbUseValueFromDataSource.AutoSize" type="System.Boolean, mscorlib">
+  <data name="&gt;&gt;bSet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cbReadOnly.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;cbUseFixedValue.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="cbReadOnly.Text" xml:space="preserve">
+    <value>Set field read only</value>
+  </data>
+  <data name="&gt;&gt;tbFixedValue.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="bSet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 23</value>
+  </data>
+  <data name="&gt;&gt;tbFixedValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -496,116 +611,49 @@
         wAMAAMABAADAAQAAwAEAAMABAADAAQAAwAEAAMABAAAAAQAAAAEAAAABAAAAAQAAwAEAAOABAADwAQAA
 </value>
   </data>
-  <data name="&gt;&gt;bSet.Name" xml:space="preserve">
-    <value>bSet</value>
-  </data>
-  <data name="cbDataSourceColumns.Size" type="System.Drawing.Size, System.Drawing">
-    <value>259, 21</value>
-  </data>
   <data name="bSet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 81</value>
+    <value>12, 130</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="cbUseValueFromDataSource.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;bSet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tbFixedValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 104</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FieldOptionForm</value>
-  </data>
-  <data name="bSet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 23</value>
-  </data>
-  <data name="cbDataSourceColumns.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 54</value>
-  </data>
-  <data name="&gt;&gt;cbDataSourceColumns.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbDataSourceColumns.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>284, 116</value>
-  </data>
-  <data name="&gt;&gt;cbUseValueFromDataSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cbReadOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 17</value>
-  </data>
-  <data name="cbReadOnly.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="cbReadOnly.Text" xml:space="preserve">
-    <value>Set field read only</value>
-  </data>
-  <data name="&gt;&gt;cbUseValueFromDataSource.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="cbUseFixedValue.Text" xml:space="preserve">
+    <value>Use fixed value</value>
   </data>
   <data name="&gt;&gt;cbUseValueFromDataSource.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="cbUseValueFromDataSource.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="cbUseFixedValue.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;bSet.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="cbUseFixedValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 81</value>
+  </data>
+  <data name="&gt;&gt;tbFixedValue.Name" xml:space="preserve">
+    <value>tbFixedValue</value>
+  </data>
+  <data name="&gt;&gt;cbUseFixedValue.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;cbReadOnly.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cbReadOnly.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bSet.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="cbDataSourceColumns.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="cbUseValueFromDataSource.Text" xml:space="preserve">
-    <value>Use value from data source</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cbReadOnly.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;cbDataSourceColumns.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="tbFixedValue.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;cbReadOnly.Name" xml:space="preserve">
-    <value>cbReadOnly</value>
+  <data name="cbUseFixedValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 17</value>
   </data>
-  <data name="&gt;&gt;cbUseValueFromDataSource.Name" xml:space="preserve">
-    <value>cbUseValueFromDataSource</value>
-  </data>
-  <data name="bSet.Text" xml:space="preserve">
-    <value>Set</value>
-  </data>
-  <data name="cbReadOnly.AutoSize" type="System.Boolean, mscorlib">
+  <data name="cbUseFixedValue.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;cbDataSourceColumns.Name" xml:space="preserve">
-    <value>cbDataSourceColumns</value>
-  </data>
-  <data name="cbReadOnly.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 8</value>
-  </data>
-  <data name="&gt;&gt;cbReadOnly.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Option</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>de</value>
   </metadata>
 </root>

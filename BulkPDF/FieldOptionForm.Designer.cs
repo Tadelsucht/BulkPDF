@@ -33,6 +33,8 @@
             this.bSet = new System.Windows.Forms.Button();
             this.cbUseValueFromDataSource = new System.Windows.Forms.CheckBox();
             this.cbReadOnly = new System.Windows.Forms.CheckBox();
+            this.cbUseFixedValue = new System.Windows.Forms.CheckBox();
+            this.tbFixedValue = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // cbDataSourceColumns
@@ -64,10 +66,25 @@
             this.cbReadOnly.UseVisualStyleBackColor = true;
             this.cbReadOnly.CheckedChanged += new System.EventHandler(this.cbReadOnly_CheckedChanged);
             // 
+            // cbUseFixedValue
+            // 
+            resources.ApplyResources(this.cbUseFixedValue, "cbUseFixedValue");
+            this.cbUseFixedValue.Name = "cbUseFixedValue";
+            this.cbUseFixedValue.UseVisualStyleBackColor = true;
+            this.cbUseFixedValue.CheckedChanged += new System.EventHandler(this.cbUseFixedValue_CheckedChanged);
+            // 
+            // tbFixedValue
+            // 
+            resources.ApplyResources(this.tbFixedValue, "tbFixedValue");
+            this.tbFixedValue.Name = "tbFixedValue";
+            this.tbFixedValue.Validated += new System.EventHandler(this.tbFixedValue_Validated);
+            // 
             // FieldOptionForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.tbFixedValue);
+            this.Controls.Add(this.cbUseFixedValue);
             this.Controls.Add(this.cbReadOnly);
             this.Controls.Add(this.cbUseValueFromDataSource);
             this.Controls.Add(this.bSet);
@@ -86,6 +103,7 @@
         private System.Windows.Forms.Button bSet;
         private System.Windows.Forms.CheckBox cbUseValueFromDataSource;
         private System.Windows.Forms.CheckBox cbReadOnly;
-
+        private System.Windows.Forms.CheckBox cbUseFixedValue;
+        private System.Windows.Forms.TextBox tbFixedValue;
     }
 }

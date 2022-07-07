@@ -41,6 +41,13 @@ namespace BulkPDF
             cbUseValueFromDataSource.Checked = pdfField.UseValueFromDataSource;
             cbUseValueFromDataSource_CheckedChanged(null, null);
 
+            tbFixedValue.Text = "";
+            if (!String.IsNullOrEmpty(pdfField.FixedValue))
+                tbFixedValue.Text = PDFField.FixedValue;
+
+            cbUseFixedValue.Checked = pdfField.UseFixedValue;
+            cbUseFixedValue_CheckedChanged(null, null);
+
             cbReadOnly.Checked = pdfField.MakeReadOnly;
             cbReadOnly_CheckedChanged(null, null);
         }
@@ -75,11 +82,26 @@ namespace BulkPDF
         {
             cbDataSourceColumns.Enabled = cbUseValueFromDataSource.Checked;
             pdfField.UseValueFromDataSource = cbUseValueFromDataSource.Checked;
+            if (cbUseValueFromDataSource.Checked && cbUseFixedValue.Checked)
+                cbUseFixedValue.Checked = false;
         }
 
         private void FieldOptionForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             SavedLocation = this.DesktopLocation;
+        }
+
+        private void cbUseFixedValue_CheckedChanged(object sender, EventArgs e)
+        {
+            tbFixedValue.Enabled = cbUseFixedValue.Checked;
+            pdfField.UseFixedValue = cbUseFixedValue.Checked;
+            if (cbUseFixedValue.Checked && cbUseValueFromDataSource.Checked)
+                cbUseValueFromDataSource.Checked = false;
+        }
+
+        private void tbFixedValue_Validated(object sender, EventArgs e)
+        {
+            pdfField.FixedValue = tbFixedValue.Text;
         }
     }
 }
