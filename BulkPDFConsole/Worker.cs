@@ -44,8 +44,9 @@ namespace BulkPDFConsole
                 {
                     var pdfField = new PDFField();
                     pdfField.Name = node.Element("Name").Value;
-                    pdfField.DataSourceValue = node.Element("NewValue").Value;
+                    pdfField.DataSourceValue = pdfField.FixedValue = node.Element("NewValue").Value;
                     pdfField.UseValueFromDataSource = Convert.ToBoolean(node.Element("UseValueFromDataSource").Value);
+                    pdfField.UseFixedValue = Convert.ToBoolean(node.Element("UseFixedValue").Value);
                     pdfField.MakeReadOnly = Convert.ToBoolean(node.Element("MakeReadOnly").Value);
 
                     pdfFields.Add(pdfField.Name, pdfField);

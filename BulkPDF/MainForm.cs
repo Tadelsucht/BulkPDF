@@ -55,7 +55,6 @@ namespace BulkPDF
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            wizardPages.SelectedIndex = 1;
             wizardPages.SelectedIndex = 0;
         }
 
@@ -316,18 +315,16 @@ namespace BulkPDF
                 if (fieldOptionForm.ShouldBeSaved)
                 {
                     pdfFields[fieldOptionForm.PDFField.Name] = fieldOptionForm.PDFField;
-                    if (fieldOptionForm.PDFField.UseValueFromDataSource)
-                    {
-                        string value = pdfFields[fieldOptionForm.PDFField.Name].DataSourceValue;
-                        if (pdfFields[fieldOptionForm.PDFField.Name].MakeReadOnly)
-                            value = "[#]" + value;
+                    string value = pdfFields[fieldOptionForm.PDFField.Name].CurrentValue;
 
-                        dgvBulkPDF.Rows[e.RowIndex].Cells["ColValue"].Value = value;
-                    }
-                    else
-                    {
-                        dgvBulkPDF.Rows[e.RowIndex].Cells["ColValue"].Value = pdfFields[fieldOptionForm.PDFField.Name].CurrentValue;
-                    }
+                    if (fieldOptionForm.PDFField.UseValueFromDataSource)
+                        value = pdfFields[fieldOptionForm.PDFField.Name].DataSourceValue;
+                    else if (fieldOptionForm.PDFField.UseFixedValue)
+                        value = pdfFields[fieldOptionForm.PDFField.Name].FixedValue;
+                    if (pdfFields[fieldOptionForm.PDFField.Name].MakeReadOnly)
+                        value = "[#]" + value;
+
+                    dgvBulkPDF.Rows[e.RowIndex].Cells["ColValue"].Value = value;
                 }
             }
         }
@@ -439,23 +436,29 @@ namespace BulkPDF
                             if ((string)dgvBulkPDF.Rows[row].Cells[0].Value == name)
                             {
                                 var pdfField = pdfFields[name];
-                                pdfField.DataSourceValue = node.Element("NewValue").Value;
-                                pdfField.UseValueFromDataSource = Convert.ToBoolean(node.Element("UseValueFromDataSource").Value);
-                                pdfField.MakeReadOnly = Convert.ToBoolean(node.Element("MakeReadOnly").Value);
+                                string value = pdfFields[name].CurrentValue;
+
+                                pdfField.UseValueFromDataSource = Convert.ToBoolean(node.Element("UseValueFromDataSource")?.Value ?? "False");
+                                if (pdfField.UseValueFromDataSource)
+                                    pdfField.DataSourceValue = node.Element("NewValue")?.Value;
+
+                                pdfField.UseFixedValue = Convert.ToBoolean(node.Element("UseFixedValue")?.Value ?? "False");
+                                if (pdfField.UseFixedValue)
+                                    pdfField.FixedValue = node.Element("NewValue")?.Value;
+                                
+                                pdfField.MakeReadOnly = Convert.ToBoolean(node.Element("MakeReadOnly")?.Value ?? "False");
                                 pdfFields[name] = pdfField;
 
                                 if (pdfFields[name].UseValueFromDataSource)
-                                {
-                                    string value = pdfFields[name].DataSourceValue;
-                                    if (pdfFields[name].MakeReadOnly)
-                                        value = "[#]" + value;
+                                    value = pdfFields[name].DataSourceValue;
 
-                                    dgvBulkPDF.Rows[row].Cells["ColValue"].Value = value;
-                                }
-                                else
-                                {
-                                    dgvBulkPDF.Rows[row].Cells["ColValue"].Value = pdfFields[name].CurrentValue;
-                                }
+                                if (pdfFields[name].UseFixedValue)
+                                    value = pdfFields[name].FixedValue;
+
+                                if (pdfFields[name].MakeReadOnly)
+                                    value = "[#]" + value;
+
+                                dgvBulkPDF.Rows[row].Cells["ColValue"].Value = value;
                             }
                         }
                     }
@@ -541,8 +544,9 @@ namespace BulkPDF
                 {
                     xmlWriter.WriteStartElement("PDFFieldValue"); // <PDFFieldValue>
                     xmlWriter.WriteElementString("Name", pdfField.Value.Name);
-                    xmlWriter.WriteElementString("NewValue", pdfField.Value.DataSourceValue);
+                    xmlWriter.WriteElementString("NewValue", pdfField.Value.UseValueFromDataSource ? pdfField.Value.DataSourceValue : pdfField.Value.FixedValue);
                     xmlWriter.WriteElementString("UseValueFromDataSource", pdfField.Value.UseValueFromDataSource.ToString());
+                    xmlWriter.WriteElementString("UseFixedValue", pdfField.Value.UseFixedValue.ToString());
                     xmlWriter.WriteElementString("MakeReadOnly", pdfField.Value.MakeReadOnly.ToString());
                     xmlWriter.WriteEndElement(); // </PDFFieldValue>
                 }

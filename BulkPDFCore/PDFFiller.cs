@@ -26,6 +26,8 @@ namespace BulkPDF
                         var value = dataSource.GetField(dataSource.Columns.FindIndex(x => x == pdfFields[field].DataSourceValue) + 1);
                         pdf.SetFieldValue(field, value, pdfFields[field].MakeReadOnly);
                     }
+                    else if (pdfFields[field].UseFixedValue)
+                        pdf.SetFieldValue(field, pdfFields[field].FixedValue, pdfFields[field].MakeReadOnly);
                 }
 
                 // PDF
